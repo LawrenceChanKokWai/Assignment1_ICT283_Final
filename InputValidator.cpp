@@ -1,19 +1,13 @@
 
-#include "Menu.h"
+#include "InputValidator.h"
 
-Menu::Menu()
+InputValidator::InputValidator()
 {
     m_userYear = 0;
     m_userMonth = 0;
 }
 
-void Menu::Clear( unsigned &month, unsigned &year )
-{
-    month = 0;
-    year = 0;
-}
-
-unsigned Menu::MonthValidation( string &month )
+unsigned InputValidator::MonthValidation( string &month )
 {
     do
     {
@@ -33,7 +27,7 @@ unsigned Menu::MonthValidation( string &month )
     return m_userMonth;
 }
 
-unsigned Menu::YearValidation( string &year )
+unsigned InputValidator::YearValidation( string &year )
 {
     do
     {
@@ -53,12 +47,12 @@ unsigned Menu::YearValidation( string &year )
     return m_userYear;
 }
 
-bool Menu::IsMonthInputValid() const
+bool InputValidator::IsMonthInputValid() const
 {
     return ( m_userMonth <= 0 || m_userMonth > 12 );
 }
 
-bool Menu::IsYearInputValid() const
+bool InputValidator::IsYearInputValid() const
 {
     return ( m_userYear <= 2010 || m_userYear > 2030 );
 }

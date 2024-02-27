@@ -45,15 +45,30 @@ public:
      */
     void LoadCSVData( Vector<string> &csvFilePath, MapAov &mapAov );
 
-    void OutputStreamMeasurement(
-    SensorRecType &sensorRecType,
-    const string &output_filePath,
-    unsigned &month,
-    float &speedMean,
-    float &speedSsd,
-    float &tempMean,
-    float &tempSsd,
-    float &srSum );
+    /**
+     * @brief Records sensor data to an output file and computes statistical measurements.
+     *
+     * This function records sensor data to the specified output file and calculates statistical measurements
+     * including mean and standard deviation for speed and temperature readings, as well as the sum of sensor readings.
+     *
+     * @param[in] sensorRecType Reference to the sensor record type.
+     * @param[in] outputFile Reference to the ofstream.
+     * @param[in] month Reference to the month for which data is recorded.
+     * @param[in] speedMean Reference to store the mean value of speed readings.
+     * @param[in] speedSsd Reference to store the standard deviation of speed readings.
+     * @param[in] tempMean Reference to store the mean value of temperature readings.
+     * @param[in] tempSsd Reference to store the standard deviation of temperature readings.
+     * @param[in] srSum Reference to store the sum of sensor readings.
+     */
+    bool OutputStreamMeasurement(
+        SensorRecType &sensorRecType,
+        ofstream &outputFile,
+        unsigned &month,
+        float &speedMean,
+        float &speedSsd,
+        float &tempMean,
+        float &tempSsd,
+        float &srSum );
 
 
 

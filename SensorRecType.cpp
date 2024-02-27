@@ -11,10 +11,10 @@ SensorRecType::SensorRecType()
 }
 
 SensorRecType::SensorRecType( const Date &date,
-                          const Time &time,
-                          const WindSpeed &windSpeed,
-                          const SolarRadiation &solarRadiation,
-                          const Temperature &temperature )
+                              const Time &time,
+                              const WindSpeed &windSpeed,
+                              const SolarRadiation &solarRadiation,
+                              const Temperature &temperature )
 {
     m_date              = date;
     m_time              = time;

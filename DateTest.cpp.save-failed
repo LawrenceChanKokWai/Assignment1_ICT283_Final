@@ -1,0 +1,132 @@
+#include "Date.h"
+#include <iostream>
+
+void Assert( bool condition, const string &title, const string &description, const string &expectedOutput );
+void TestDefaultConstructor( const Date &date );
+void TestParameterizedConstructor( const Date &date );
+
+int main()
+{
+    Date testDate;
+    Date dateValid;
+
+    TestDefaultConstructor( testDate );
+    TestParameterizedConstructor( dateValid );
+
+    return 0;
+}
+
+/**
+// Function to perform unit tests
+std::string runTests( Date& testDate, const Date &dateValid )
+{
+    std::ostringstream testResults;
+
+    // Test constructor - Default
+    testResults << "Test 1: Default Constructor\n";
+    testResults << "  Test Data/Values: None\n";
+    testResults << "  Expected Output: Day, month, and year initialized to INITIAL_VALUE\n";
+    testResults << (testDate.GetDay() == 0 &&
+                    testDate.GetMonth() == 0 &&
+                    testDate.GetYear() == 0 ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    // Test constructor - Valid input parameters
+    testResults << "Test 2: Constructor with Valid Input Parameters\n";
+    testResults << "  Test Data/Values: Day = 25, Month = 12, Year = 2023\n";
+    testResults << "  Expected Output: Day = 25, Month = 12, Year = 2023\n";
+    testResults << (dateValid.GetDay() == 25 &&
+                    dateValid.GetMonth() == 12 &&
+                    dateValid.GetYear() == 2023 ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    // Test SetDay, SetMonth, SetYear
+    testDate.SetDay(10);
+    testDate.SetMonth(3);
+    testDate.SetYear(2024);
+    testResults << "Test 3: Setters\n";
+    testResults << "  Test Data/Values: Day = 10, Month = 3, Year = 2024\n";
+    testResults << "  Expected Output: Day = 10, Month = 3, Year = 2024\n";
+    testResults << (testDate.GetDay() == 10 &&
+                    testDate.GetMonth() == 3 &&
+                    testDate.GetYear() == 2024 ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    // Test GetDay, GetMonth, GetYear
+    testResults << "Test 4: Getters\n";
+    testResults << "  Test Data/Values: Day = 10, Month = 3, Year = 2024 (using testDate Object)\n";
+    testResults << "  Expected Output: Day = 10, Month = 3, Year = 2024\n";
+    testResults << (testDate.GetDay() == 10 &&
+                    testDate.GetMonth() == 3 &&
+                    testDate.GetYear() == 2024 ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    // Test GetMonthInStr - Valid month
+    testResults << "Test 5: GetMonthInStr - Valid month\n";
+    testResults << "  Test Data/Values: Month = 4\n";
+    testResults << "  Expected Output: 'April'\n";
+    testResults << (testDate.GetMonthInStr(4) == "April" ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    // Test GetMonthInStr - Invalid month
+    testResults << "Test 6: GetMonthInStr - Invalid month\n";
+    testResults << "  Test Data/Values: Month = 15\n";
+    testResults << "  Expected Output: 'Error'\n";
+    testResults << (testDate.GetMonthInStr(15) == "Error" ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    // Test operator <<
+    std::ostringstream outputStream;
+    outputStream << dateValid;
+    testResults << "Test 7: Operator << Overloading\n";
+    testResults << "  Test Data/Values: Date object with Day = 25, Month = 12, Year = 2023\n";
+    testResults << "  Expected Output: '25 December 2023'\n";
+    testResults << (outputStream.str() == "25 December 2023" ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    // Test operator >>
+    std::istringstream inputStream("10/11/2022");
+    Date dateInput;
+    inputStream >> dateInput;
+    testResults << "Test 8: Operator >> Overloading - Valid input\n";
+    testResults << "  Test Data/Values: Input = '10/11/2022'\n";
+    testResults << "  Expected Output: Date object with Day = 10, Month = 11, Year = 2022\n";
+    testResults << (dateInput.GetDay() == 10 &&
+                    dateInput.GetMonth() == 11 &&
+                    dateInput.GetYear() == 2022 ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+
+    return testResults.str();
+}
+
+int main()
+{
+    Date testDate;
+    Date dateValid(25, 12, 2023);
+
+    std::cout << "Running unit tests for Date class...\n\n";
+    std::cout << runTests(testDate, dateValid );
+    return 0;
+}
+*/
+
+void Assert( bool condition, const string &title, const string &description, const string &expectedOutput )
+{
+    cout << title;
+    cout << description;
+    cout << expectedOutput;
+    cout << ( condition ? "  [ PASS ]" : "[ FAIL ]") << "\n\n";
+}
+
+void TestDefaultConstructor( const Date &date )
+{
+    Assert( date.GetDay() == 0 &&
+            date.GetMonth() == 0 &&
+            date.GetYear() == 0,
+            "Test 1: Default Constructor\n",
+            "  Test Data/Values: None\n",
+            "  Expected Output: Day, month, and year initialized to INITIAL_VALUE\n" );
+}
+
+void TestParameterizedConstructor( const Date &date )
+{
+    Assert( date.GetDay() == 25 &&
+            date.GetMonth() == 12 &&
+            date.GetYear() == 2023,
+            "Test 2: Constructor with Valid Input Parameters\n";
+            "  Test Data/Values: Day = 25, Month = 12, Year = 2023\n";",
+            "  Expected Output: Day = 25, Month = 12, Year = 2023\n" );
+}
+

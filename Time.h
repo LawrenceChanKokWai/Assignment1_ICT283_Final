@@ -68,6 +68,18 @@ public:
     */
     void SetMinute( const unsigned &minute );
 
+    /**
+ * @brief Overloaded equality operator for Time objects.
+ *
+ * This operator checks whether two Time objects have the same hour and minute.
+ *
+ * @param[in] otherTime The Time object to compare with.
+ * @return true if the hour and minute of both Time objects are equal, false otherwise.
+ *
+ * @see Time
+ */
+    bool operator == ( const Time &otherTime );
+
 private:
     unsigned INITIAL_VALUE = 0;
 

@@ -109,15 +109,6 @@ public:
     T *Start();
 
     /**
-    * @brief Access an element by vector's index.
-    *
-    * @param[in] index The index of the element to access in the vector.
-    * @param[out] The element content from the vector index.
-    * @return T element object.
-    */
-    T& At(unsigned index);
-
-    /**
     * @brief Pointer that points on the end of the vector index.
     *
     * @return The end of the vector index.
@@ -291,12 +282,6 @@ template<class T>
 bool Vector<T>::IsEmpty() const
 {
     return (m_used == 0);
-}
-
-template<class T>
-T& Vector<T>::At(unsigned index)
-{
-    return m_array[index];
 }
 
 template<class T>

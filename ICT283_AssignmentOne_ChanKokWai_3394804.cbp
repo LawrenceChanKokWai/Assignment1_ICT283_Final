@@ -42,6 +42,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="InputValidator.cpp" />
+		<Unit filename="InputValidator.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="Main.cpp" />
 		<Unit filename="MapAov.cpp" />
 		<Unit filename="MapAov.h">
@@ -54,10 +58,6 @@
 		<Unit filename="MeasurementTest.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-		</Unit>
-		<Unit filename="Menu.cpp" />
-		<Unit filename="Menu.h">
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="Processor.cpp" />
 		<Unit filename="Processor.h">

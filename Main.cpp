@@ -3,8 +3,7 @@
 #include<conio.h>
 #include<cstdlib>
 
-#include "MapAov.h"
-#include "Menu.h"
+#include "InputValidator.h"
 #include "Processor.h"
 
 using namespace std;
@@ -16,17 +15,19 @@ int main()
     Vector<string> csvFilePath;
     MapAov mapAov;
     ifstream inFile( filename );
+    ofstream outputFile( outFilePath );
 
     Processor::GetInstance();
     Processor::GetInstance().LoadCSVFilePathToVector( csvFilePath, inFile, filename );
     Processor::GetInstance().LoadCSVData( csvFilePath, mapAov );
 
-    Menu menu;
+    InputValidator validator;
     SensorRecType sensorRecType;
     Vector<SensorRecType> sensorRecords;
 
     string year;
     string month;
+    bool isFileExported = false;
     char user_choice;
     do
     {
@@ -46,64 +47,96 @@ int main()
         {
         case '1':
             cout << Constant::SELECTED_OPTION_ONE_MSG << endl;
-            validatedMonth = menu.MonthValidation( month );
-            validatedYear = menu.YearValidation( year );
+            validatedMonth = validator.MonthValidation(month);
+            validatedYear = validator.YearValidation(year);
 
-            sensorRecords = mapAov.DisplayMeanSsdFromMonthAndYear(validatedYear, validatedMonth);
-
+            sensorRecords = mapAov.GetSensorData()[validatedYear][validatedMonth - 1];
             if (!sensorRecords.IsEmpty())
             {
-                float sumWindSpeed = 0.0;
-                unsigned count = 0;
-                for ( unsigned i(0); i<sensorRecords.GetUsed(); i++ )
-                {
-                    sumWindSpeed += sensorRecords[i].GetSensorWindSpeed().GetMeasurement();
-                    count ++;
-                }
+                //Calculate the mean
+                float windSpeedMean = mapAov.MeanOfMeasurementSwitch(sensorRecords, SensorMeasurementType::WIND_SPEED);
 
-                if( count > 0 )
-                {
-                    float standardDeviation = mapAov.GetSampleStandardDeviation(sensorRecords);
-                    cout    << Constant::OUTPUT << endl;
-                    cout    << sensorRecType.GetSensorDate().GetMonthInStr( validatedMonth ) << " " << validatedYear << ":" << endl;
-                    cout    << Constant::AVERAGE_WINDSPEED << setprecision(3) << sensorRecType.GetSensorWindSpeed().GetMean( sumWindSpeed, count ) << endl;
-                    cout    << Constant::WINDSPEED_STANDARD_DEVIATION << setprecision(3) << standardDeviation << '\n' << endl;
-                }
-                else
-                {
-                    cout    << Constant::OUTPUT << endl;
-                    cout    << setw(5) << " " << sensorRecType.GetSensorDate().GetMonthInStr(validatedMonth) << " " << validatedYear << ": No Data" << '\n' << endl;
-                }
+                // Calculate Sample Standard Deviation
+                float windSpeedSsd = mapAov.SampleStandardDeviationMeasurementSwitch(sensorRecords, SensorMeasurementType::WIND_SPEED);
+
+                float convertedWindSpeedMean = sensorRecType.GetSensorWindSpeed().ConvertUnit( windSpeedMean );
+                float convertedWindSpeedSsd = sensorRecType.GetSensorWindSpeed().ConvertUnit( windSpeedSsd );
+
+                cout    << Constant::OUTPUT << endl;
+                cout    << sensorRecType.GetSensorDate().GetMonthInStr( validatedMonth ) << " " << validatedYear << ":" << endl;
+                cout    << Constant::AVERAGE_WINDSPEED << setprecision(3) << convertedWindSpeedMean << endl;
+                cout    << Constant::WINDSPEED_STANDARD_DEVIATION << setprecision(3) << convertedWindSpeedSsd << '\n' << endl;
             }
             else
             {
                 cout    << Constant::OUTPUT << endl;
                 cout    << setw(5) << " " << sensorRecType.GetSensorDate().GetMonthInStr(validatedMonth) << " " << validatedYear << ": No Data" << '\n' << endl;
             }
+            cout << endl;
             break;
-
         case '2':
             cout << Constant::SELECTED_OPTION_TWO_MSG << endl;
 
-            validatedYear = menu.YearValidation(year);
+            validatedYear = validator.YearValidation(year);
             cout << '\n'  << Constant::OUTPUT << '\n' << validatedYear << ":" << endl;
-            mapAov.DisplayMeanSsdEachMonthOfYear( validatedYear );
 
+            for (unsigned month = 1; month <= 12; ++month)
+            {
+                sensorRecords = mapAov.GetSensorData()[validatedYear][month - 1];
+                if (!sensorRecords.IsEmpty())
+                {
+                    //Calculate the mean
+                    float temperatureMean = mapAov.MeanOfMeasurementSwitch(sensorRecords, SensorMeasurementType::AMBIENT_TEMPERATURE);
+
+                    // Calculate Sample Standard Deviation
+                    float temperatureSsd = mapAov.SampleStandardDeviationMeasurementSwitch(sensorRecords, SensorMeasurementType::AMBIENT_TEMPERATURE);
+
+                    cout << sensorRecType.GetSensorDate().GetMonthInStr( month ) << ": " <<
+                         setprecision(3) << temperatureMean << " degrees C, stdev: " <<  setprecision(3) <<temperatureSsd << endl;
+                }
+                else
+                {
+                    cout << sensorRecType.GetSensorDate().GetMonthInStr(month) << ": No Data" << endl;
+                }
+            }
+            cout << endl;
             break;
         case '3':
             cout << Constant::SELECTED_OPTION_THREE_MSG << endl;
 
-            validatedYear = menu.YearValidation(year);
+            validatedYear = validator.YearValidation(year);
             cout << '\n'  << Constant::OUTPUT << '\n' << validatedYear << ":" << endl;
-            mapAov.DisplaySumMonthOfYear( validatedYear );
+            for (unsigned month = 1; month <= 12; ++month)
+            {
+                sensorRecords = mapAov.GetSensorData()[validatedYear][month - 1];
+                if (!sensorRecords.IsEmpty())
+                {
+                    float solarRadiationSum = mapAov.SumOfMeasurementSwitch(sensorRecords, SensorMeasurementType::SOLAR_RADIATION);
+                    float convertedSrSum = sensorRecType.GetSensorSolarRadiation().ConvertUnit( solarRadiationSum );
 
+                    cout << sensorRecType.GetSensorDate().GetMonthInStr(month) << ": "
+                         << setprecision(3) << convertedSrSum << " kWh/m2" << endl;
+                }
+                else
+                {
+                    cout << sensorRecType.GetSensorDate().GetMonthInStr(month) << ": No Data" << endl;
+                }
+            }
+            cout << endl;
             break;
         case '4':
             cout << Constant::SELECTED_OPTION_FOUR_MSG << endl;
 
-            validatedYear = menu.YearValidation(year);
+            validatedYear = validator.YearValidation(year);
             cout << '\n' << Constant::OUTPUT << endl;
             cout << '\n' <<  validatedYear << ":" << endl;
+
+            if( !outputFile )
+            {
+                cerr << "[ ERROR ] Opening File: " << outFilePath << endl;
+            }
+
+            outputFile << "Month,Average Wind Speed(stdev),Average Ambient Temperature(stdev),Solar Radiation" << endl;
 
             for (unsigned month = 1; month <= 12; ++month)
             {
@@ -112,7 +145,6 @@ int main()
                 {
                     // Calculate the sum for solar radiation
                     float solarRadiationSum = mapAov.SumOfMeasurementSwitch(sensorRecords, SensorMeasurementType::SOLAR_RADIATION);
-                    float convertedSrSum = solarRadiationSum / 60000;
 
                     //Calculate the mean
                     float windSpeedMean = mapAov.MeanOfMeasurementSwitch(sensorRecords, SensorMeasurementType::WIND_SPEED);
@@ -122,25 +154,42 @@ int main()
                     float windSpeedSsd = mapAov.SampleStandardDeviationMeasurementSwitch(sensorRecords, SensorMeasurementType::WIND_SPEED);
                     float temperatureSsd = mapAov.SampleStandardDeviationMeasurementSwitch(sensorRecords, SensorMeasurementType::AMBIENT_TEMPERATURE);
 
+                    float convertedWindSpeedMean = sensorRecType.GetSensorWindSpeed().ConvertUnit( windSpeedMean );
+                    float convertedWindSpeedSsd = sensorRecType.GetSensorWindSpeed().ConvertUnit( windSpeedSsd );
+                    float convertedSrSum = sensorRecType.GetSensorSolarRadiation().ConvertUnit( solarRadiationSum );
+
                     cout << sensorRecType.GetSensorDate().GetMonthInStr(month) << ","
-                         << setprecision(3) << windSpeedMean << "(" << setprecision(3) << windSpeedSsd << "),"
+                         << setprecision(3) << convertedWindSpeedMean << "(" << setprecision(3) << convertedWindSpeedSsd << "),"
                          << setprecision(3) << temperatureMean << "(" << setprecision(3) << temperatureSsd << "),"
                          << setprecision(3) << convertedSrSum << endl;
 
-                    Processor::GetInstance().OutputStreamMeasurement(
-                        sensorRecType,
-                        outFilePath,
-                        month,
-                        windSpeedMean,
-                        windSpeedSsd,
-                        temperatureMean,
-                        temperatureSsd,
-                        convertedSrSum );
+                    if(
+                        Processor::GetInstance().OutputStreamMeasurement(
+                            sensorRecType,
+                            outputFile,
+                            month,
+                            windSpeedMean,
+                            convertedWindSpeedSsd,
+                            temperatureMean,
+                            temperatureSsd,
+                            convertedSrSum ) )
+                    {
+                        isFileExported = true;
+                    }
                 }
                 else
                 {
                     cout << sensorRecType.GetSensorDate().GetMonthInStr(month) << ",No Data" << endl;
                 }
+            }
+            outputFile.close();
+            if( isFileExported )
+            {
+                cout << '\n' << "[ INFO ]: Data has being exported to: " << outFilePath << endl;
+            }
+            else
+            {
+                cout << "[ ERROR ]: Exporting data to: " << outFilePath << endl;
             }
             cout << endl;
             break;

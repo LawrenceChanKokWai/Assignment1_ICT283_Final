@@ -37,6 +37,8 @@ public:
     */
     WindSpeed( const float &measurement );
 
+    float ConvertUnit( float &measurement );
+
 };
 
 /**

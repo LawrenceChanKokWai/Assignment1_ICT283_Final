@@ -45,14 +45,6 @@ public:
      */
     void SetMeasurement( const float &measurement );
 
-
-    float GetMean( float &sum, unsigned &count );
-
-    float GetSumSquareDifferences( float &sumSquareDifferences, float &perSquareDifference, float &mean );
-
-    float GetStandardDeviation( float &sumSquareDifferences, unsigned &count );
-
-
 private:
     unsigned INITIAL_VALUE = 0.0;   ///< Initial value for the Measurement.
 

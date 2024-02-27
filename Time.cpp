@@ -33,6 +33,11 @@ void Time::SetMinute( const unsigned &minute )
     m_minute = minute;
 }
 
+bool Time::operator == ( const Time &otherTime )
+{
+    return m_hour == otherTime.m_hour && m_minute == otherTime.m_minute;
+}
+
 ostream &operator << ( ostream &outputStream, const Time &T )
 {
     outputStream << T.GetHour() << ":" << setw(2) << setfill( '0' ) << T.GetMinute();
@@ -43,12 +48,28 @@ ostream &operator << ( ostream &outputStream, const Time &T )
 istream &operator >> ( istream &inputStream, Time &T )
 {
     string tempField;
+    const unsigned INITIAL_VALUE = 0;
 
     getline( inputStream, tempField, ':');
-    T.SetHour( stoi(tempField) );
+    try
+    {
+        T.SetHour( stoi(tempField) );
+    }
+    catch(...)
+    {
+        T.SetHour( INITIAL_VALUE );
+    }
 
     getline( inputStream, tempField, ',');
-    T.SetMinute( stoi(tempField) );
+    try
+    {
+        T.SetMinute( stoi(tempField) );
+
+    }
+    catch(...)
+    {
+        T.SetMinute( INITIAL_VALUE );
+    }
 
     return inputStream;
 }

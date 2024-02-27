@@ -114,7 +114,6 @@ public:
     */
     void SetSensorTemperature( const Temperature &temperature );
 
-
 private:
     Date m_date;                        /**< The date component of the sensor record. */
     Time m_time;                        /**< The time component of the sensor record. */

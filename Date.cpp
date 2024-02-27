@@ -44,50 +44,55 @@ void Date::SetYear(const unsigned &year)
     m_year = year;
 }
 
+bool Date::operator == ( const Date &otherDate ) const
+{
+    return ( m_day == otherDate.m_day && m_month == otherDate.m_month && m_year == otherDate.m_year );
+}
+
 string Date::GetMonthInStr(const unsigned &month) const
 {
     string strInMonth;
     switch(month)
     {
-        case 1:
-            strInMonth = "January";
-            break;
-        case 2:
-            strInMonth = "February";
-            break;
-        case 3:
-            strInMonth = "March";
-            break;
-        case 4:
-            strInMonth = "April";
-            break;
-        case 5:
-            strInMonth = "May";
-            break;
-        case 6:
-            strInMonth = "June";
-            break;
-        case 7:
-            strInMonth = "July";
-            break;
-        case 8:
-            strInMonth = "August";
-            break;
-        case 9:
-            strInMonth = "September";
-            break;
-        case 10:
-            strInMonth = "October";
-            break;
-        case 11:
-            strInMonth = "November";
-            break;
-        case 12:
-            strInMonth = "December";
-            break;
-        default:
-            strInMonth = "Error";
-            break;
+    case 1:
+        strInMonth = "January";
+        break;
+    case 2:
+        strInMonth = "February";
+        break;
+    case 3:
+        strInMonth = "March";
+        break;
+    case 4:
+        strInMonth = "April";
+        break;
+    case 5:
+        strInMonth = "May";
+        break;
+    case 6:
+        strInMonth = "June";
+        break;
+    case 7:
+        strInMonth = "July";
+        break;
+    case 8:
+        strInMonth = "August";
+        break;
+    case 9:
+        strInMonth = "September";
+        break;
+    case 10:
+        strInMonth = "October";
+        break;
+    case 11:
+        strInMonth = "November";
+        break;
+    case 12:
+        strInMonth = "December";
+        break;
+    default:
+        strInMonth = "Error";
+        break;
     }
     return strInMonth;
 }
@@ -104,15 +109,37 @@ ostream &operator << (ostream &outputStream, const Date &D)
 istream &operator >> (istream &inputStream, Date &D)
 {
     string tempField = "";
+    const unsigned INITIAL_VALUE = 0;
 
     getline(inputStream, tempField, '/');
-    D.SetDay(stoi(tempField));
+    try
+    {
+        D.SetDay(stoi(tempField));
+    }
+    catch(...)
+    {
+        D.SetDay( INITIAL_VALUE );
+    }
 
     getline(inputStream, tempField, '/');
-    D.SetMonth(stoi(tempField));
+    try
+    {
+        D.SetMonth(stoi(tempField));
+    }
+    catch(...)
+    {
+        D.SetMonth( INITIAL_VALUE );
+    }
 
     getline(inputStream, tempField, ' ');
-    D.SetYear(stoi(tempField));
+    try
+    {
+        D.SetYear(stoi(tempField));
+    }
+    catch(...)
+    {
+        D.SetYear( INITIAL_VALUE );
+    }
 
     return inputStream;
 }

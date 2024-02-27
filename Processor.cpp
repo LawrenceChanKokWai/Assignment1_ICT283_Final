@@ -77,9 +77,9 @@ void Processor::LoadCSVData( Vector<string> &csvFilePath, MapAov &mapAov )
     LoadDisplayCount();
 }
 
-void Processor::OutputStreamMeasurement(
+bool Processor::OutputStreamMeasurement(
     SensorRecType &sensorRecType,
-    const string &output_filePath,
+    ofstream &outputFile,
     unsigned &month,
     float &speedMean,
     float &speedSsd,
@@ -87,19 +87,10 @@ void Processor::OutputStreamMeasurement(
     float &tempSsd,
     float &srSum )
 {
-    ofstream outputFile( output_filePath );
-
-    if( !outputFile )
-    {
-        cerr << "[ ERROR ] Opening File: " << output_filePath << endl;
-    }
-    outputFile << "Month,Average Wind Speed(stdev),Average Ambient Temperature(stdev),Solar Radiation" << endl;
-
     outputFile << sensorRecType.GetSensorDate().GetMonthInStr(month) << ","
-               << speedMean << "(" << speedSsd << "),"
-               << tempMean << "(" << tempSsd << "),"
-               << srSum / 60000 << endl;
-
-    outputFile.close();
+               << setprecision(3) << speedMean << "(" << setprecision(3) << speedSsd << "),"
+               << setprecision(3) << tempMean << "(" << setprecision(3) << tempSsd << "),"
+               << setprecision(3) << srSum << endl;
+    return true;
 }
 

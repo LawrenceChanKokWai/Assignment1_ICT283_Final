@@ -79,6 +79,18 @@ public:
     ///
     void SetYear(const unsigned &year);
 
+    /**
+    * @brief Overloaded equality operator for Date objects.
+    *
+    * This operator checks whether two Date objects have the same day, month, and minute.
+    *
+    * @param[in] otherDate The Date object to compare with.
+    * @return true if the day, month, and minute of both Date objects are equal, false otherwise.
+    *
+    * @see Time
+    */
+    bool operator == ( const Date &otherDate ) const;
+
     ///
     /// @brief Method that allows retrieving the month in string with the Date class.
     ///
@@ -116,6 +128,6 @@ ostream &operator << (ostream &outputStream, const Date &D);
 /// @param D The Date object where the read information will be stored.
 /// @return A reference to the input stream after setting the Date object.
 ///
-istream &operator >> (istream &inputStream , Date &D);
+istream &operator >> (istream &inputStream, Date &D);
 
 #endif // DATE_H_INCLUDED

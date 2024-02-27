@@ -5,6 +5,11 @@ WindSpeed::WindSpeed(): Measurement(){}
 
 WindSpeed::WindSpeed( const float &measurement ): Measurement( measurement ){}
 
+float WindSpeed::ConvertUnit( float &measurement )
+{
+    return ( measurement * 3.6 );
+}
+
 ostream &operator << ( ostream &output, const WindSpeed &WS )
 {
     output << WS.GetMeasurement();

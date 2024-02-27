@@ -35,6 +35,9 @@ public:
     * @post Creates a SolarRadiation object with specified solar radiation measurement.
     */
     SolarRadiation( const float &measurement );
+
+    float ConvertUnit( float &measurement );
+
 };
 
 /**
