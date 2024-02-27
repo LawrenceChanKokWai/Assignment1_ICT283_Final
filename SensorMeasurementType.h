@@ -1,3 +1,15 @@
+
+/**
+* @file SensorMeasurementType.h
+* @brief SensorMeasurementType class definition.
+*
+* This file contains the definition of the enum SensorMeasurementType class.
+* This class is provides identifiers for different types of sensor measurements
+* using a factory pattern.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef SENSORMEASUREMENTTYPE_H_INCLUDED
 #define SENSORMEASUREMENTTYPE_H_INCLUDED
 

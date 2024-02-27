@@ -1,0 +1,13 @@
+<map id="SensorRecType::GetSensorDate" name="SensorRecType::GetSensorDate">
+<area shape="rect" id="node1" title="Get the date component of the sensor record." alt="" coords="620,183,831,209"/>
+<area shape="rect" id="node2" href="$class_map_aov.html#af369ca9b570f5b24daf8c9d211d7db06" title="Insert sensor data into the map consisted with array of Vectors." alt="" coords="359,5,535,32"/>
+<area shape="rect" id="node4" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node5" href="$_sensor_rec_type_8h.html#a550b7a9392969887ddd57c9add2f5bfd" title="Overloaded stream insertion operator for outputting SensorRecType to an ostream." alt="" coords="405,107,490,133"/>
+<area shape="rect" id="node6" href="$class_processor.html#a9ffca81c2e7aee9a5194e5d6f62d2ee4" title="Records sensor data to an output file and computes statistical measurements." alt="" coords="323,157,572,184"/>
+<area shape="rect" id="node7" href="$_sensor_rec_type_test_8cpp.html#a4013ea076142e387414baefc11fc59ff" title=" " alt="" coords="370,208,525,235"/>
+<area shape="rect" id="node9" href="$_sensor_rec_type_test_8cpp.html#a114d9b5ff35b7ff4adaf32935e8071e5" title=" " alt="" coords="402,259,493,285"/>
+<area shape="rect" id="node10" href="$_sensor_rec_type_test_8cpp.html#a1116777681a544b41d289df53457882e" title=" " alt="" coords="348,309,547,336"/>
+<area shape="rect" id="node11" href="$_sensor_rec_type_test_8cpp.html#a4211f20659d7d1523a8e6ed526795485" title=" " alt="" coords="403,360,492,387"/>
+<area shape="rect" id="node3" href="$class_processor.html#a79bc4ad79ada68780784832695a3758d" title="Loads CSV data from a vector of file paths into a vector of WindRecType objects." alt="" coords="104,5,275,32"/>
+<area shape="rect" id="node8" href="$_sensor_rec_type_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="164,284,215,311"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MapAov::SumOfMeasurementSwitch" name="MapAov::SumOfMeasurementSwitch">
+<area shape="rect" id="node1" title="Switch function to compute the sum of different types of measurements." alt="" coords="352,5,547,47"/>
+<area shape="rect" id="node2" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,56,39"/>
+<area shape="rect" id="node3" href="$class_map_aov.html#a9508eaebeb7e5287e79413d4cd17b75c" title="Switch function to compute the mean of different types of measurements." alt="" coords="104,35,304,76"/>
+</map>

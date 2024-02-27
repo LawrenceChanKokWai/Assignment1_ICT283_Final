@@ -1,0 +1,4 @@
+<map id="MapAov::SampleStandardDeviationMeasurementSwitch" name="MapAov::SampleStandardDeviationMeasurementSwitch">
+<area shape="rect" id="node1" title="Switch function to compute the sample standard deviation of different types of measurements." alt="" coords="5,5,229,47"/>
+<area shape="rect" id="node2" href="$class_vector.html#ab72cd45d42bfea0432b2780c504ea867" title="Get the number of elements used in the vector." alt="" coords="277,13,396,39"/>
+</map>

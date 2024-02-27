@@ -1,0 +1,4 @@
+<map id="SolarRadiation" name="SolarRadiation">
+<area shape="rect" id="node1" title="Represents a temperature measurement." alt="" coords="13,175,140,281"/>
+<area shape="rect" id="node2" href="$class_measurement.html" title="Represents a base class." alt="" coords="5,5,148,127"/>
+</map>

@@ -1,4 +1,12 @@
-
+/**
+* @file Time.cpp
+* @brief Time class implementation file
+*
+* This file contains the Time class implementation.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "Time.h"
 
 Time::Time()

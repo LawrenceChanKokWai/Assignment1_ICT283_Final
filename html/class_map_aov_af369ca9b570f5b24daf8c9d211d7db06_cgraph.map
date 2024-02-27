@@ -1,0 +1,6 @@
+<map id="MapAov::InsertSensorData" name="MapAov::InsertSensorData">
+<area shape="rect" id="node1" title="Insert sensor data into the map consisted with array of Vectors." alt="" coords="5,56,181,83"/>
+<area shape="rect" id="node2" href="$class_date.html#aa316776e60e28ae20a710bcf6d96b7b8" title="Method that allows retrieving the month that is associated with the Date class." alt="" coords="277,5,392,32"/>
+<area shape="rect" id="node3" href="$class_sensor_rec_type.html#a7e94391ece6b543bc24c6c053e1db5e7" title="Get the date component of the sensor record." alt="" coords="229,56,440,83"/>
+<area shape="rect" id="node4" href="$class_date.html#ad3519b229e188cca67c764352929ea83" title="Method that allows retrieving the year that is associated with the Date class." alt="" coords="282,107,387,133"/>
+</map>

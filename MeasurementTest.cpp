@@ -1,3 +1,12 @@
+/**
+* @file MeasurementTest.cpp
+* @brief Measurement Test execution file
+*
+* This file contains the execution unit test for Measurement Class.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "Measurement.h"
 #include <iostream>
 #include <sstream>

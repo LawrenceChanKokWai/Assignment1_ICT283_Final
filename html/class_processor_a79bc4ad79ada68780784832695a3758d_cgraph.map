@@ -1,0 +1,8 @@
+<map id="Processor::LoadCSVData" name="Processor::LoadCSVData">
+<area shape="rect" id="node1" title="Loads CSV data from a vector of file paths into a vector of WindRecType objects." alt="" coords="5,31,176,57"/>
+<area shape="rect" id="node2" href="$class_vector.html#ab72cd45d42bfea0432b2780c504ea867" title="Get the number of elements used in the vector." alt="" coords="253,5,371,32"/>
+<area shape="rect" id="node3" href="$class_map_aov.html#af369ca9b570f5b24daf8c9d211d7db06" title="Insert sensor data into the map consisted with array of Vectors." alt="" coords="224,56,400,83"/>
+<area shape="rect" id="node4" href="$class_date.html#aa316776e60e28ae20a710bcf6d96b7b8" title="Method that allows retrieving the month that is associated with the Date class." alt="" coords="496,5,611,32"/>
+<area shape="rect" id="node5" href="$class_sensor_rec_type.html#a7e94391ece6b543bc24c6c053e1db5e7" title="Get the date component of the sensor record." alt="" coords="448,56,659,83"/>
+<area shape="rect" id="node6" href="$class_date.html#ad3519b229e188cca67c764352929ea83" title="Method that allows retrieving the year that is associated with the Date class." alt="" coords="501,107,606,133"/>
+</map>

@@ -1,0 +1,145 @@
+\hypertarget{class_input_validator}{}\doxysection{Input\+Validator Class Reference}
+\label{class_input_validator}\index{InputValidator@{InputValidator}}
+
+
+Class for user input validation related to month and year.  
+
+
+
+
+{\ttfamily \#include $<$Input\+Validator.\+h$>$}
+
+
+
+Collaboration diagram for Input\+Validator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_input_validator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_validator_a0d5e2a9294f2d9b421f50d9efbc0248c}{Input\+Validator}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_input_validator}{Input\+Validator}} class. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_input_validator_aa8aa998dfb86b883a11cf4c2195d550f}{Month\+Validation}} (string \&month)
+\begin{DoxyCompactList}\small\item\em Validates user input for month. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_input_validator_adafc081b7b324c0f458e7b05dadaed8c}{Year\+Validation}} (string \&year)
+\begin{DoxyCompactList}\small\item\em Validates user input for year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for user input validation related to month and year. 
+
+This class provides methods to validate user input for month and year to ensure they are within valid ranges and formats. 
+
+Definition at line 25 of file Input\+Validator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_input_validator_a0d5e2a9294f2d9b421f50d9efbc0248c}\label{class_input_validator_a0d5e2a9294f2d9b421f50d9efbc0248c}} 
+\index{InputValidator@{InputValidator}!InputValidator@{InputValidator}}
+\index{InputValidator@{InputValidator}!InputValidator@{InputValidator}}
+\doxysubsubsection{\texorpdfstring{InputValidator()}{InputValidator()}}
+{\footnotesize\ttfamily Input\+Validator\+::\+Input\+Validator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{class_input_validator}{Input\+Validator}} class. 
+
+This constructor initializes the member variables m\+\_\+user\+Year and m\+\_\+user\+Month to zero, providing a default starting point for these variables.
+
+\begin{DoxyRemark}{Remarks}
+This constructor is called when an instance of the \mbox{\hyperlink{class_input_validator}{Input\+Validator}} class is created, ensuring that the member variables are properly initialized. 
+\end{DoxyRemark}
+
+
+Definition at line 12 of file Input\+Validator.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_input_validator_aa8aa998dfb86b883a11cf4c2195d550f}\label{class_input_validator_aa8aa998dfb86b883a11cf4c2195d550f}} 
+\index{InputValidator@{InputValidator}!MonthValidation@{MonthValidation}}
+\index{MonthValidation@{MonthValidation}!InputValidator@{InputValidator}}
+\doxysubsubsection{\texorpdfstring{MonthValidation()}{MonthValidation()}}
+{\footnotesize\ttfamily unsigned Input\+Validator\+::\+Month\+Validation (\begin{DoxyParamCaption}\item[{string \&}]{month }\end{DoxyParamCaption})}
+
+
+
+Validates user input for month. 
+
+This function repeatedly prompts the user to enter a month value until a valid input is provided. It displays a message indicating the acceptable range of months and requests input from the user. If the input is invalid (non-\/numeric or out of range), an error message is shown, and the user is prompted again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & A reference to a string variable where the user input for month will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The validated user input for month. 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file Input\+Validator.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_validator_aa8aa998dfb86b883a11cf4c2195d550f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_input_validator_aa8aa998dfb86b883a11cf4c2195d550f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_input_validator_adafc081b7b324c0f458e7b05dadaed8c}\label{class_input_validator_adafc081b7b324c0f458e7b05dadaed8c}} 
+\index{InputValidator@{InputValidator}!YearValidation@{YearValidation}}
+\index{YearValidation@{YearValidation}!InputValidator@{InputValidator}}
+\doxysubsubsection{\texorpdfstring{YearValidation()}{YearValidation()}}
+{\footnotesize\ttfamily unsigned Input\+Validator\+::\+Year\+Validation (\begin{DoxyParamCaption}\item[{string \&}]{year }\end{DoxyParamCaption})}
+
+
+
+Validates user input for year. 
+
+This function repeatedly prompts the user to enter a year value until a valid input is provided. It displays a message indicating the acceptable range of year and requests input from the user. If the input is invalid (non-\/numeric or out of range), an error message is shown, and the user is prompted again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & A reference to a string variable where the user input for year will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The validated user input for year. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file Input\+Validator.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_validator_adafc081b7b324c0f458e7b05dadaed8c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_input_validator_adafc081b7b324c0f458e7b05dadaed8c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_input_validator_8h}{Input\+Validator.\+h}}\item 
+\mbox{\hyperlink{_input_validator_8cpp}{Input\+Validator.\+cpp}}\end{DoxyCompactItemize}

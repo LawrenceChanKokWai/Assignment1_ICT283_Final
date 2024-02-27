@@ -1,10 +1,13 @@
 
 /**
- * @file ICT283_AssignmentOne_SolarRadiation.h
- * @brief Defines the SolarRadiation class for representing the measurement of the wind records.
- * @author Chan Kok Wai
- * @version 1.0.0
- */
+* @file SolarRadiation.h
+* @brief SolarRadiation class definition.
+*
+* This file contains the child definition of Measurement class.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef SOLARRADIATION_H_INCLUDED
 #define SOLARRADIATION_H_INCLUDED
 

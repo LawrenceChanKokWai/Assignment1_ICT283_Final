@@ -1,4 +1,13 @@
 
+/**
+* @file Processor.cpp
+* @brief Processor class implementation file
+*
+* This file contains the Processor class implementation.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "Processor.h"
 
 // +++++++++++++ PRIVATE ++++++++++++++++++++++++++
@@ -50,7 +59,7 @@ void Processor::LoadCSVData( Vector<string> &csvFilePath, MapAov &mapAov )
 {
     for( unsigned i(0); i<csvFilePath.GetUsed(); i++ )
     {
-        string modifiedFilePath = "data/" + csvFilePath[i];
+        string modifiedFilePath = "C:/Users/ChanKokWai/Desktop/V3_AssignmentOne/ICT283_AssignmentOne_ChanKokWai_3394804/data/" + csvFilePath[i];
         ifstream CSVFile( modifiedFilePath );
         if( !CSVFile )
         {

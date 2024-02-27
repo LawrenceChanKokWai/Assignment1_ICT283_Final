@@ -1,0 +1,226 @@
+\hypertarget{class_time}{}\doxysection{Time Class Reference}
+\label{class_time}\index{Time@{Time}}
+
+
+Represents a date for the measurements.  
+
+
+
+
+{\ttfamily \#include $<$Time.\+h$>$}
+
+
+
+Collaboration diagram for Time\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_time__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_time_a4245e409c7347d1d671858962c2ca3b5}{Time}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{class_time}{Time}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_time_a0450006e0ae5b7c7dead4d839c86e1ec}{Time}} (const unsigned \&hour, const unsigned \&minute)
+\begin{DoxyCompactList}\small\item\em Parameterized Constructor For The \mbox{\hyperlink{class_time}{Time}} Class. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_time_a468cb29f77bc1b290df3e63a87164c30}{Get\+Hour}} () const
+\begin{DoxyCompactList}\small\item\em Method that allows retrieving the hour that is associated with the \mbox{\hyperlink{class_time}{Time}} class. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_time_a5e9c43cb59f31cf7e0b8b1df79227e09}{Get\+Minute}} () const
+\begin{DoxyCompactList}\small\item\em Method that allows retrieving the minute that is associated with the \mbox{\hyperlink{class_time}{Time}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_a0f1261eb686b1aaa0366d39e035fb818}{Set\+Hour}} (const unsigned \&hour)
+\begin{DoxyCompactList}\small\item\em Method that allows setting the hour associated with the \mbox{\hyperlink{class_time}{Time}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_time_af0b98cbc57d252e672b4599571142376}{Set\+Minute}} (const unsigned \&minute)
+\begin{DoxyCompactList}\small\item\em Method that allows setting the minute associated with the \mbox{\hyperlink{class_time}{Time}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_time_a93a6cec37d3b0f6af1f9f218861e8feb}{operator==}} (const \mbox{\hyperlink{class_time}{Time}} \&other\+Time)
+\begin{DoxyCompactList}\small\item\em Overloaded equality operator for \mbox{\hyperlink{class_time}{Time}} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a date for the measurements. 
+
+Definition at line 24 of file Time.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_time_a4245e409c7347d1d671858962c2ca3b5}\label{class_time_a4245e409c7347d1d671858962c2ca3b5}} 
+\index{Time@{Time}!Time@{Time}}
+\index{Time@{Time}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Time\+::\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \mbox{\hyperlink{class_time}{Time}} class. 
+
+This constructor creates a \mbox{\hyperlink{class_time}{Time}} object with default values for hour, and minute attributes that is set as 00. 
+
+Definition at line 12 of file Time.\+cpp.
+
+\mbox{\Hypertarget{class_time_a0450006e0ae5b7c7dead4d839c86e1ec}\label{class_time_a0450006e0ae5b7c7dead4d839c86e1ec}} 
+\index{Time@{Time}!Time@{Time}}
+\index{Time@{Time}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Time\+::\+Time (\begin{DoxyParamCaption}\item[{const unsigned \&}]{hour,  }\item[{const unsigned \&}]{minute }\end{DoxyParamCaption})}
+
+
+
+Parameterized Constructor For The \mbox{\hyperlink{class_time}{Time}} Class. 
+
+This constructor creates a \mbox{\hyperlink{class_time}{Time}} Class with user defined values for the hour, and minute as parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em hour} & The hour associated with the time. \\
+\hline
+\mbox{\texttt{ in}}  & {\em minute} & The minute associated with the time. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file Time.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_time_a468cb29f77bc1b290df3e63a87164c30}\label{class_time_a468cb29f77bc1b290df3e63a87164c30}} 
+\index{Time@{Time}!GetHour@{GetHour}}
+\index{GetHour@{GetHour}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{GetHour()}{GetHour()}}
+{\footnotesize\ttfamily unsigned Time\+::\+Get\+Hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that allows retrieving the hour that is associated with the \mbox{\hyperlink{class_time}{Time}} class. 
+
+\begin{DoxyReturn}{Returns}
+unsigned data type of the hour associated with the time. 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file Time.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_a468cb29f77bc1b290df3e63a87164c30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_a5e9c43cb59f31cf7e0b8b1df79227e09}\label{class_time_a5e9c43cb59f31cf7e0b8b1df79227e09}} 
+\index{Time@{Time}!GetMinute@{GetMinute}}
+\index{GetMinute@{GetMinute}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{GetMinute()}{GetMinute()}}
+{\footnotesize\ttfamily unsigned Time\+::\+Get\+Minute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that allows retrieving the minute that is associated with the \mbox{\hyperlink{class_time}{Time}} class. 
+
+\begin{DoxyReturn}{Returns}
+unsigned data type of the minute associated with the time. 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Time.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_a5e9c43cb59f31cf7e0b8b1df79227e09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_a93a6cec37d3b0f6af1f9f218861e8feb}\label{class_time_a93a6cec37d3b0f6af1f9f218861e8feb}} 
+\index{Time@{Time}!operator==@{operator==}}
+\index{operator==@{operator==}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Time\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_time}{Time}} \&}]{other\+Time }\end{DoxyParamCaption})}
+
+
+
+Overloaded equality operator for \mbox{\hyperlink{class_time}{Time}} objects. 
+
+This operator checks whether two \mbox{\hyperlink{class_time}{Time}} objects have the same hour and minute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other\+Time} & The \mbox{\hyperlink{class_time}{Time}} object to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the hour and minute of both \mbox{\hyperlink{class_time}{Time}} objects are equal, false otherwise.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_time}{Time}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 44 of file Time.\+cpp.
+
+\mbox{\Hypertarget{class_time_a0f1261eb686b1aaa0366d39e035fb818}\label{class_time_a0f1261eb686b1aaa0366d39e035fb818}} 
+\index{Time@{Time}!SetHour@{SetHour}}
+\index{SetHour@{SetHour}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{SetHour()}{SetHour()}}
+{\footnotesize\ttfamily void Time\+::\+Set\+Hour (\begin{DoxyParamCaption}\item[{const unsigned \&}]{hour }\end{DoxyParamCaption})}
+
+
+
+Method that allows setting the hour associated with the \mbox{\hyperlink{class_time}{Time}} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em hour} & referenced hour with the \mbox{\hyperlink{class_time}{Time}} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Time.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_time_a0f1261eb686b1aaa0366d39e035fb818_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_time_af0b98cbc57d252e672b4599571142376}\label{class_time_af0b98cbc57d252e672b4599571142376}} 
+\index{Time@{Time}!SetMinute@{SetMinute}}
+\index{SetMinute@{SetMinute}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{SetMinute()}{SetMinute()}}
+{\footnotesize\ttfamily void Time\+::\+Set\+Minute (\begin{DoxyParamCaption}\item[{const unsigned \&}]{minute }\end{DoxyParamCaption})}
+
+
+
+Method that allows setting the minute associated with the \mbox{\hyperlink{class_time}{Time}} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em minute} & referenced minute with the \mbox{\hyperlink{class_time}{Time}} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Time.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_time_af0b98cbc57d252e672b4599571142376_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_time_8h}{Time.\+h}}\item 
+\mbox{\hyperlink{_time_8cpp}{Time.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="TestRemoveObjectAt" name="TestRemoveObjectAt">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,149,133"/>
+<area shape="rect" id="node2" href="$_vector_test_8cpp.html#aef9583c88e1003e446aca2cfeefb87c9" title=" " alt="" coords="207,5,314,32"/>
+<area shape="rect" id="node3" href="$class_vector.html#a36d9a3e899ad2bf132e0f2a8dc43ffaa" title="Pointer that points on the end of the vector index." alt="" coords="209,56,312,83"/>
+<area shape="rect" id="node4" href="$class_vector.html#a0b4525d26f9397f327e6adb7c7eee22c" title="Insert an object to the end of the vector." alt="" coords="198,107,323,133"/>
+<area shape="rect" id="node5" href="$class_vector.html#ab83cc7f486d849b61a7899e32e666f5a" title="Removes an object on a desired index of the vector." alt="" coords="197,157,324,184"/>
+<area shape="rect" id="node6" href="$class_vector.html#ac4bcfa88c7ec4b2c8f62497490e9d156" title="Pointer that points on the start of the vector index[0]." alt="" coords="213,208,309,235"/>
+</map>

@@ -1,0 +1,104 @@
+\hypertarget{_time_8cpp}{}\doxysection{Time.\+cpp File Reference}
+\label{_time_8cpp}\index{Time.cpp@{Time.cpp}}
+
+
+\mbox{\hyperlink{class_time}{Time}} class implementation file.  
+
+
+{\ttfamily \#include \char`\"{}Time.\+h\char`\"{}}\newline
+Include dependency graph for Time.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{_time_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{_time_8cpp_a48e96373f934d0a94893a70a8eb70cdc}{operator$<$$<$}} (ostream \&output\+Stream, const \mbox{\hyperlink{class_time}{Time}} \&T)
+\begin{DoxyCompactList}\small\item\em Function\+: Overloaded stream insertion operator for \mbox{\hyperlink{class_time}{Time}} class. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{_time_8cpp_a7edd6ddded2629b1909953202d397eea}{operator$>$$>$}} (istream \&input\+Stream, \mbox{\hyperlink{class_time}{Time}} \&T)
+\begin{DoxyCompactList}\small\item\em Function\+: Overloaded stream extraction operator for \mbox{\hyperlink{class_time}{Time}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_time}{Time}} class implementation file. 
+
+This file contains the \mbox{\hyperlink{class_time}{Time}} class implementation.
+
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai ( Student Number\+: 33924804 ) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_time_8cpp_a48e96373f934d0a94893a70a8eb70cdc}\label{_time_8cpp_a48e96373f934d0a94893a70a8eb70cdc}} 
+\index{Time.cpp@{Time.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Time.cpp@{Time.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{output\+Stream,  }\item[{const \mbox{\hyperlink{class_time}{Time}} \&}]{T }\end{DoxyParamCaption})}
+
+
+
+Function\+: Overloaded stream insertion operator for \mbox{\hyperlink{class_time}{Time}} class. 
+
+This allows a \mbox{\hyperlink{class_time}{Time}} object to be printed to an output stream using the standard output format. The hour (unsigned data type), and minute (unsigned data type) will be printed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em output\+Stream} & The output stream where the \mbox{\hyperlink{class_time}{Time}} object will be printed. \\
+\hline
+\mbox{\texttt{ in}}  & {\em T} & The \mbox{\hyperlink{class_time}{Time}} object to be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the output stream after printing the \mbox{\hyperlink{class_time}{Time}} object. 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Time.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{_time_8cpp_a48e96373f934d0a94893a70a8eb70cdc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_time_8cpp_a7edd6ddded2629b1909953202d397eea}\label{_time_8cpp_a7edd6ddded2629b1909953202d397eea}} 
+\index{Time.cpp@{Time.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Time.cpp@{Time.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input\+Stream,  }\item[{\mbox{\hyperlink{class_time}{Time}} \&}]{T }\end{DoxyParamCaption})}
+
+
+
+Function\+: Overloaded stream extraction operator for \mbox{\hyperlink{class_time}{Time}} class. 
+
+This allows a \mbox{\hyperlink{class_time}{Time}} object to be read from an input stream using the standard input format. The input should contain the hour (unsigned data type), and minute (unsigned data type).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input\+Stream} & The input stream from which the \mbox{\hyperlink{class_time}{Time}} object will be read. \\
+\hline
+\mbox{\texttt{ in}}  & {\em T} & The \mbox{\hyperlink{class_time}{Time}} object where the read information will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the input stream after setting the \mbox{\hyperlink{class_time}{Time}} object. 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Time.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{_time_8cpp_a7edd6ddded2629b1909953202d397eea_cgraph}
+\end{center}
+\end{figure}

@@ -1,3 +1,12 @@
+/**
+* @file Main.cpp
+* @brief Entry point for the assignment. The main execution file.
+*
+* This file contains the entry point of execution for assignment one.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include <iostream>
 #include<iomanip>
 #include<conio.h>
@@ -10,8 +19,11 @@ using namespace std;
 
 int main()
 {
-    const string filename = "data/data_source.txt";
-    const string outFilePath = "data/WindTempSolar.csv";
+    //const string filename = "data/data_source.txt";
+    //const string outFilePath = "data/WindTempSolar.csv";
+
+    const string filename = "C:/Users/ChanKokWai/Desktop/V3_AssignmentOne/ICT283_AssignmentOne_ChanKokWai_3394804/data/data_source.txt";
+    const string outFilePath = "C:/Users/ChanKokWai/Desktop/V3_AssignmentOne/ICT283_AssignmentOne_ChanKokWai_3394804/data/WindTempSolar.csv";
     Vector<string> csvFilePath;
     MapAov mapAov;
     ifstream inFile( filename );

@@ -1,0 +1,22 @@
+<map id="Measurement.h" name="Measurement.h">
+<area shape="rect" id="node1" title="Measurement class definition." alt="" coords="621,5,733,32"/>
+<area shape="rect" id="node2" href="$_wind_speed_8h.html" title="WindSpeed class definition." alt="" coords="627,80,727,107"/>
+<area shape="rect" id="node13" href="$_solar_radiation_8h.html" title="SolarRadiation class definition." alt="" coords="269,80,386,107"/>
+<area shape="rect" id="node16" href="$_temperature_8h.html" title="Temperature class definition." alt="" coords="497,80,603,107"/>
+<area shape="rect" id="node19" href="$_measurement_8cpp.html" title="Measurement class implementation file." alt="" coords="751,80,877,107"/>
+<area shape="rect" id="node20" href="$_measurement_test_8cpp.html" title="Measurement Test execution file." alt="" coords="901,80,1052,107"/>
+<area shape="rect" id="node3" href="$_sensor_rec_type_8h.html" title="SensorRecType class definition." alt="" coords="341,155,466,181"/>
+<area shape="rect" id="node11" href="$_wind_speed_8cpp.html" title="WindSpeed class implementation file." alt="" coords="965,155,1079,181"/>
+<area shape="rect" id="node12" href="$_wind_speed_test_8cpp.html" title="WindSpeed Test execution file." alt="" coords="802,155,941,181"/>
+<area shape="rect" id="node4" href="$_map_aov_8h.html" title="MapAov class definition." alt="" coords="231,229,309,256"/>
+<area shape="rect" id="node9" href="$_sensor_rec_type_8cpp.html" title="SensorRecType class implementation file." alt="" coords="334,229,473,256"/>
+<area shape="rect" id="node10" href="$_sensor_rec_type_test_8cpp.html" title="SensorRecType Test execution file." alt="" coords="497,229,661,256"/>
+<area shape="rect" id="node5" href="$_processor_8h.html" title="Processor class definition." alt="" coords="165,304,257,331"/>
+<area shape="rect" id="node8" href="$_map_aov_8cpp.html" title="MapAov class implementation file." alt="" coords="282,304,375,331"/>
+<area shape="rect" id="node6" href="$_main_8cpp.html" title="Entry point for the assignment. The main execution file." alt="" coords="117,379,191,405"/>
+<area shape="rect" id="node7" href="$_processor_8cpp.html" title="Processor class implementation file." alt="" coords="215,379,322,405"/>
+<area shape="rect" id="node14" href="$_solar_radiation_8cpp.html" title="SolarRadiation class implementation file." alt="" coords="186,155,317,181"/>
+<area shape="rect" id="node15" href="$_solar_radiation_test_8cpp.html" title="SolarRadiation Test execution file." alt="" coords="5,155,161,181"/>
+<area shape="rect" id="node17" href="$_temperature_8cpp.html" title="Temperature class implementation file." alt="" coords="491,155,609,181"/>
+<area shape="rect" id="node18" href="$_temperature_test_8cpp.html" title="Temperature Test execution file." alt="" coords="634,155,778,181"/>
+</map>

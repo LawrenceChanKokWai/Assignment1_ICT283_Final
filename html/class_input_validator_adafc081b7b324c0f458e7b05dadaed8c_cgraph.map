@@ -1,0 +1,5 @@
+<map id="InputValidator::YearValidation" name="InputValidator::YearValidation">
+<area shape="rect" id="node1" title="Validates user input for year." alt="" coords="5,31,199,57"/>
+<area shape="rect" id="node2" href="$namespace_constant.html#a78f2bc44b4c0903e6cac64ab409367a2" title="Returns an information message." alt="" coords="257,5,369,32"/>
+<area shape="rect" id="node3" href="$namespace_constant.html#a3b30e2d2a7a08b7f334e56853fef4a6e" title="Returns a status message based on a condition." alt="" coords="247,56,379,83"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="WindSpeed.h" name="WindSpeed.h">
+<area shape="rect" id="node1" title="WindSpeed class definition." alt="" coords="386,5,486,32"/>
+<area shape="rect" id="node2" href="$_sensor_rec_type_8h.html" title="SensorRecType class definition." alt="" coords="229,80,355,107"/>
+<area shape="rect" id="node10" href="$_wind_speed_8cpp.html" title="WindSpeed class implementation file." alt="" coords="379,80,493,107"/>
+<area shape="rect" id="node11" href="$_wind_speed_test_8cpp.html" title="WindSpeed Test execution file." alt="" coords="517,80,656,107"/>
+<area shape="rect" id="node3" href="$_map_aov_8h.html" title="MapAov class definition." alt="" coords="119,155,198,181"/>
+<area shape="rect" id="node8" href="$_sensor_rec_type_8cpp.html" title="SensorRecType class implementation file." alt="" coords="223,155,361,181"/>
+<area shape="rect" id="node9" href="$_sensor_rec_type_test_8cpp.html" title="SensorRecType Test execution file." alt="" coords="386,155,550,181"/>
+<area shape="rect" id="node4" href="$_processor_8h.html" title="Processor class definition." alt="" coords="54,229,146,256"/>
+<area shape="rect" id="node7" href="$_map_aov_8cpp.html" title="MapAov class implementation file." alt="" coords="171,229,264,256"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html" title="Entry point for the assignment. The main execution file." alt="" coords="5,304,80,331"/>
+<area shape="rect" id="node6" href="$_processor_8cpp.html" title="Processor class implementation file." alt="" coords="104,304,211,331"/>
+</map>

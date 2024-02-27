@@ -1,3 +1,13 @@
+/**
+* @file Processor.h
+* @brief Processor class definition.
+*
+* This file contains the definition of the Processor class.
+* The class allows FileI/O operations with singleton pattern.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef PROCESSOR_H_INCLUDED
 #define PROCESSOR_H_INCLUDED
 

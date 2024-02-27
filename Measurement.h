@@ -1,3 +1,15 @@
+
+/**
+* @file Measurement.h
+* @brief Measurement class definition.
+*
+* This file contains the definition of the Measurement base class.
+* The class allows setting and retrieving the measurement associated with the sensor measurements.
+* It also overloads stream operators for input and output to facilitate I/O operations.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef MEASUREMENT_H_INCLUDED
 #define MEASUREMENT_H_INCLUDED
 

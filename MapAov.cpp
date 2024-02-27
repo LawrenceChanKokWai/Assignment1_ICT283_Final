@@ -1,4 +1,12 @@
-
+/**
+* @file MapAov.cpp
+* @brief MapAov class implementation file
+*
+* This file contains the MapAov class implementation.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "MapAov.h"
 
 const map<unsigned, array<Vector<SensorRecType>, MapAov::NUM_MTH>>& MapAov::GetSensorData() const

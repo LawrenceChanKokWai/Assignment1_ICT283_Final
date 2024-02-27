@@ -1,0 +1,4 @@
+<map id="MapAov::SumOfMeasurementSwitch" name="MapAov::SumOfMeasurementSwitch">
+<area shape="rect" id="node1" title="Switch function to compute the sum of different types of measurements." alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$class_vector.html#ab72cd45d42bfea0432b2780c504ea867" title="Get the number of elements used in the vector." alt="" coords="248,13,367,39"/>
+</map>

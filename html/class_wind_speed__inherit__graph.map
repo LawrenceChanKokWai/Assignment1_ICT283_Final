@@ -1,0 +1,4 @@
+<map id="WindSpeed" name="WindSpeed">
+<area shape="rect" id="node1" title="Represents a wind speed measurement." alt="" coords="22,175,131,281"/>
+<area shape="rect" id="node2" href="$class_measurement.html" title="Represents a base class." alt="" coords="5,5,148,127"/>
+</map>

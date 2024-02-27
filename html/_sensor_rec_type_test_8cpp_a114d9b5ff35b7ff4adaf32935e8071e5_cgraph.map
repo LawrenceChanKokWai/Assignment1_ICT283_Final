@@ -1,0 +1,10 @@
+<map id="TestGetters" name="TestGetters">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,96,192"/>
+<area shape="rect" id="node2" href="$_sensor_rec_type_test_8cpp.html#a01e7eae59fea72cf3807e3f363eda271" title=" " alt="" coords="220,5,280,32"/>
+<area shape="rect" id="node3" href="$class_measurement.html#aecf8d91022eefcfc28ca06b72b716eab" title="Getter for the measurement variable." alt="" coords="145,56,355,83"/>
+<area shape="rect" id="node4" href="$class_sensor_rec_type.html#a7e94391ece6b543bc24c6c053e1db5e7" title="Get the date component of the sensor record." alt="" coords="145,107,355,133"/>
+<area shape="rect" id="node5" href="$class_sensor_rec_type.html#a8db3069b5130feb64cc65135e85e8dc4" title="Get the solar radiation component of the sensor record." alt="" coords="158,158,342,199"/>
+<area shape="rect" id="node6" href="$class_sensor_rec_type.html#a09dbaa29cf929cba9a46dc1ec0d198a0" title="Get the temperature component of the sensor record." alt="" coords="158,223,342,265"/>
+<area shape="rect" id="node7" href="$class_sensor_rec_type.html#a7fd301433186563da2d1e8a009cbd5c1" title="Get the time component of the sensor record." alt="" coords="144,289,356,316"/>
+<area shape="rect" id="node8" href="$class_sensor_rec_type.html#a099718254fa5b11d646fc4a9e9b2244d" title="Get the wind speed component of the sensor record." alt="" coords="158,341,342,382"/>
+</map>

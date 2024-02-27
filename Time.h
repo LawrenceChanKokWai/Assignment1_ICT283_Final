@@ -1,10 +1,3 @@
-#ifndef TIME_H_INCLUDED
-#define TIME_H_INCLUDED
-
-#include<iostream>
-#include <iomanip>
-
-using namespace std;
 
 /**
 * @file Time.h
@@ -17,6 +10,17 @@ using namespace std;
 * @author Chan Kok Wai ( Student Number: 33924804 )
 * @version 1.0
 */
+#ifndef TIME_H_INCLUDED
+#define TIME_H_INCLUDED
+
+#include<iostream>
+#include <iomanip>
+
+using namespace std;
+
+/**
+ * @brief Represents a date for the measurements.
+ */
 class Time
 {
 public:

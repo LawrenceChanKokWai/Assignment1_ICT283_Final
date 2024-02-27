@@ -1,0 +1,8 @@
+<map id="TestSetters" name="TestSetters">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,95,133"/>
+<area shape="rect" id="node2" href="$_time_test_8cpp.html#a01e7eae59fea72cf3807e3f363eda271" title=" " alt="" coords="172,5,232,32"/>
+<area shape="rect" id="node3" href="$class_time.html#a468cb29f77bc1b290df3e63a87164c30" title="Method that allows retrieving the hour that is associated with the Time class." alt="" coords="149,56,255,83"/>
+<area shape="rect" id="node4" href="$class_time.html#a5e9c43cb59f31cf7e0b8b1df79227e09" title="Method that allows retrieving the minute that is associated with the Time class." alt="" coords="143,107,261,133"/>
+<area shape="rect" id="node5" href="$class_time.html#a0f1261eb686b1aaa0366d39e035fb818" title="Method that allows setting the hour associated with the Time class." alt="" coords="149,157,255,184"/>
+<area shape="rect" id="node6" href="$class_time.html#af0b98cbc57d252e672b4599571142376" title="Method that allows setting the minute associated with the Time class." alt="" coords="143,208,261,235"/>
+</map>

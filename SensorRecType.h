@@ -1,3 +1,15 @@
+/**
+* @file SensorRecType.h
+* @brief SensorRecType class definition.
+*
+* This file contains the composition definition of SensorRecType class.
+* This class is encapsulates information about a specific sensor record,
+* including date, time, wind speed, solar radiation, and temperature. It provides methods to retrieve and set
+* these components..
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef SENSORRECTYPE_H_INCLUDED
 #define SENSORRECTYPE_H_INCLUDED
 

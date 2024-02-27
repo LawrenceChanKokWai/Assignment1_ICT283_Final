@@ -1,0 +1,259 @@
+\hypertarget{class_map_aov}{}\doxysection{Map\+Aov Class Reference}
+\label{class_map_aov}\index{MapAov@{MapAov}}
+
+
+A class representing a map consisting array of Vectors of sensor data.  
+
+
+
+
+{\ttfamily \#include $<$Map\+Aov.\+h$>$}
+
+
+
+Collaboration diagram for Map\+Aov\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_map_aov__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const map$<$ unsigned, array$<$ \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$, \mbox{\hyperlink{class_map_aov_a1f63106c118ca1788f9faa2175fca173}{N\+U\+M\+\_\+\+M\+TH}} $>$ $>$ \& \mbox{\hyperlink{class_map_aov_a3d8b23b405c0f8e536ad0a028e4cd9e3}{Get\+Sensor\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Get a constant reference to the sensor data map. \end{DoxyCompactList}\item 
+map$<$ unsigned, array$<$ \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$, \mbox{\hyperlink{class_map_aov_a1f63106c118ca1788f9faa2175fca173}{N\+U\+M\+\_\+\+M\+TH}} $>$ $>$ \& \mbox{\hyperlink{class_map_aov_a9527a34f357bf1e86925ee74c116477f}{Get\+Sensor\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get a reference to the sensor data map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_aov_af369ca9b570f5b24daf8c9d211d7db06}{Insert\+Sensor\+Data}} (const \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&sensor\+Data)
+\begin{DoxyCompactList}\small\item\em Insert sensor data into the map consisted with array of Vectors. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_map_aov_a5e705c269f69df8a06a83b0c7420c62b}{Sum\+Of\+Measurement\+Switch}} (const \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$ \&sensor\+Records, \mbox{\hyperlink{_sensor_measurement_type_8h_abee7b7fdc87d37c2132a67729cc0ab43}{Sensor\+Measurement\+Type}} sensor\+Measurement\+Type) const
+\begin{DoxyCompactList}\small\item\em Switch function to compute the sum of different types of measurements. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_map_aov_a9508eaebeb7e5287e79413d4cd17b75c}{Mean\+Of\+Measurement\+Switch}} (const \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$ \&sensor\+Records, \mbox{\hyperlink{_sensor_measurement_type_8h_abee7b7fdc87d37c2132a67729cc0ab43}{Sensor\+Measurement\+Type}} sensor\+Measurement\+Type) const
+\begin{DoxyCompactList}\small\item\em Switch function to compute the mean of different types of measurements. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_map_aov_ad0fe071b921e66c923ae9980fb8bf601}{Sample\+Standard\+Deviation\+Measurement\+Switch}} (const \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$ \&sensor\+Records, \mbox{\hyperlink{_sensor_measurement_type_8h_abee7b7fdc87d37c2132a67729cc0ab43}{Sensor\+Measurement\+Type}} sensor\+Measurement\+Type) const
+\begin{DoxyCompactList}\small\item\em Switch function to compute the sample standard deviation of different types of measurements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_map_aov_a1f63106c118ca1788f9faa2175fca173}{N\+U\+M\+\_\+\+M\+TH}} = 12
+\begin{DoxyCompactList}\small\item\em Number of months in a year. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a map consisting array of Vectors of sensor data. 
+
+This class provides functionality to manage sensor data organized by month and year. It supports operations such as insertion of sensor data, computation of mean and standard deviation, and display of aggregated data for specific months or years. 
+
+Definition at line 33 of file Map\+Aov.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_map_aov_a9527a34f357bf1e86925ee74c116477f}\label{class_map_aov_a9527a34f357bf1e86925ee74c116477f}} 
+\index{MapAov@{MapAov}!GetSensorData@{GetSensorData}}
+\index{GetSensorData@{GetSensorData}!MapAov@{MapAov}}
+\doxysubsubsection{\texorpdfstring{GetSensorData()}{GetSensorData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily map$<$unsigned, array$<$\mbox{\hyperlink{class_vector}{Vector}}$<$\mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}}$>$, \mbox{\hyperlink{class_map_aov_a1f63106c118ca1788f9faa2175fca173}{N\+U\+M\+\_\+\+M\+TH}}$>$ $>$\& Map\+Aov\+::\+Get\+Sensor\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a reference to the sensor data map. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the sensor data map. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_map_aov_a3d8b23b405c0f8e536ad0a028e4cd9e3}\label{class_map_aov_a3d8b23b405c0f8e536ad0a028e4cd9e3}} 
+\index{MapAov@{MapAov}!GetSensorData@{GetSensorData}}
+\index{GetSensorData@{GetSensorData}!MapAov@{MapAov}}
+\doxysubsubsection{\texorpdfstring{GetSensorData()}{GetSensorData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily map$<$ unsigned, array$<$ \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$, \mbox{\hyperlink{class_map_aov_a1f63106c118ca1788f9faa2175fca173}{Map\+Aov\+::\+N\+U\+M\+\_\+\+M\+TH}} $>$ $>$ \& Map\+Aov\+::\+Get\+Sensor\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get a constant reference to the sensor data map. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_constant}{Constant}} reference to the sensor data map. 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file Map\+Aov.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_map_aov_a3d8b23b405c0f8e536ad0a028e4cd9e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_aov_af369ca9b570f5b24daf8c9d211d7db06}\label{class_map_aov_af369ca9b570f5b24daf8c9d211d7db06}} 
+\index{MapAov@{MapAov}!InsertSensorData@{InsertSensorData}}
+\index{InsertSensorData@{InsertSensorData}!MapAov@{MapAov}}
+\doxysubsubsection{\texorpdfstring{InsertSensorData()}{InsertSensorData()}}
+{\footnotesize\ttfamily void Map\+Aov\+::\+Insert\+Sensor\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&}]{sensor\+Data }\end{DoxyParamCaption})}
+
+
+
+Insert sensor data into the map consisted with array of Vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Data} & The sensor data to be inserted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file Map\+Aov.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_aov_af369ca9b570f5b24daf8c9d211d7db06_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_aov_af369ca9b570f5b24daf8c9d211d7db06_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_aov_a9508eaebeb7e5287e79413d4cd17b75c}\label{class_map_aov_a9508eaebeb7e5287e79413d4cd17b75c}} 
+\index{MapAov@{MapAov}!MeanOfMeasurementSwitch@{MeanOfMeasurementSwitch}}
+\index{MeanOfMeasurementSwitch@{MeanOfMeasurementSwitch}!MapAov@{MapAov}}
+\doxysubsubsection{\texorpdfstring{MeanOfMeasurementSwitch()}{MeanOfMeasurementSwitch()}}
+{\footnotesize\ttfamily float Map\+Aov\+::\+Mean\+Of\+Measurement\+Switch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$ \&}]{sensor\+Records,  }\item[{\mbox{\hyperlink{_sensor_measurement_type_8h_abee7b7fdc87d37c2132a67729cc0ab43}{Sensor\+Measurement\+Type}}}]{sensor\+Measurement\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Switch function to compute the mean of different types of measurements. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sensor\+Records} & The vector of sensor records. \\
+\hline
+\mbox{\texttt{ in}}  & {\em sensor\+Measurement\+Type} & The type of measurement to compute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed measurement based on the switch case. 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file Map\+Aov.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_aov_a9508eaebeb7e5287e79413d4cd17b75c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_map_aov_a9508eaebeb7e5287e79413d4cd17b75c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_aov_ad0fe071b921e66c923ae9980fb8bf601}\label{class_map_aov_ad0fe071b921e66c923ae9980fb8bf601}} 
+\index{MapAov@{MapAov}!SampleStandardDeviationMeasurementSwitch@{SampleStandardDeviationMeasurementSwitch}}
+\index{SampleStandardDeviationMeasurementSwitch@{SampleStandardDeviationMeasurementSwitch}!MapAov@{MapAov}}
+\doxysubsubsection{\texorpdfstring{SampleStandardDeviationMeasurementSwitch()}{SampleStandardDeviationMeasurementSwitch()}}
+{\footnotesize\ttfamily float Map\+Aov\+::\+Sample\+Standard\+Deviation\+Measurement\+Switch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$ \&}]{sensor\+Records,  }\item[{\mbox{\hyperlink{_sensor_measurement_type_8h_abee7b7fdc87d37c2132a67729cc0ab43}{Sensor\+Measurement\+Type}}}]{sensor\+Measurement\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Switch function to compute the sample standard deviation of different types of measurements. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sensor\+Records} & The vector of sensor records. \\
+\hline
+\mbox{\texttt{ in}}  & {\em sensor\+Measurement\+Type} & The type of measurement to compute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed measurement based on the switch case. 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file Map\+Aov.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_aov_ad0fe071b921e66c923ae9980fb8bf601_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_map_aov_ad0fe071b921e66c923ae9980fb8bf601_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_map_aov_a5e705c269f69df8a06a83b0c7420c62b}\label{class_map_aov_a5e705c269f69df8a06a83b0c7420c62b}} 
+\index{MapAov@{MapAov}!SumOfMeasurementSwitch@{SumOfMeasurementSwitch}}
+\index{SumOfMeasurementSwitch@{SumOfMeasurementSwitch}!MapAov@{MapAov}}
+\doxysubsubsection{\texorpdfstring{SumOfMeasurementSwitch()}{SumOfMeasurementSwitch()}}
+{\footnotesize\ttfamily float Map\+Aov\+::\+Sum\+Of\+Measurement\+Switch (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} $>$ \&}]{sensor\+Records,  }\item[{\mbox{\hyperlink{_sensor_measurement_type_8h_abee7b7fdc87d37c2132a67729cc0ab43}{Sensor\+Measurement\+Type}}}]{sensor\+Measurement\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Switch function to compute the sum of different types of measurements. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sensor\+Records} & The vector of sensor records. \\
+\hline
+\mbox{\texttt{ in}}  & {\em sensor\+Measurement\+Type} & The type of measurement to compute.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The computed measurement based on the switch case. 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Map\+Aov.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_aov_a5e705c269f69df8a06a83b0c7420c62b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_aov_a5e705c269f69df8a06a83b0c7420c62b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_map_aov_a1f63106c118ca1788f9faa2175fca173}\label{class_map_aov_a1f63106c118ca1788f9faa2175fca173}} 
+\index{MapAov@{MapAov}!NUM\_MTH@{NUM\_MTH}}
+\index{NUM\_MTH@{NUM\_MTH}!MapAov@{MapAov}}
+\doxysubsubsection{\texorpdfstring{NUM\_MTH}{NUM\_MTH}}
+{\footnotesize\ttfamily const unsigned Map\+Aov\+::\+N\+U\+M\+\_\+\+M\+TH = 12\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Number of months in a year. 
+
+
+
+Definition at line 36 of file Map\+Aov.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_map_aov_8h}{Map\+Aov.\+h}}\item 
+\mbox{\hyperlink{_map_aov_8cpp}{Map\+Aov.\+cpp}}\end{DoxyCompactItemize}

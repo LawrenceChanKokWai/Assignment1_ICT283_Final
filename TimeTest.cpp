@@ -1,3 +1,12 @@
+/**
+* @file TimeTest.cpp
+* @brief Time Test execution file
+*
+* This file contains the execution unit test for Time Class.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "Time.h"
 #include <iostream>
 #include <sstream>

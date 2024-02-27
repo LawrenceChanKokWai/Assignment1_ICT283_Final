@@ -1,3 +1,10 @@
+/**
+* @file Vector.h
+* @brief Vector template class definition.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef VECTOR_H_INCLUDED
 #define VECTOR_H_INCLUDED
 

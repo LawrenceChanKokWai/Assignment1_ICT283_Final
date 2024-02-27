@@ -1,0 +1,478 @@
+\hypertarget{class_vector}{}\doxysection{Vector$<$ T $>$ Class Template Reference}
+\label{class_vector}\index{Vector$<$ T $>$@{Vector$<$ T $>$}}
+
+
+Defines a \mbox{\hyperlink{class_vector}{Vector}} Class, Dynamic Array Implementation.  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+h$>$}
+
+
+
+Collaboration diagram for Vector$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_vector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructor and Destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_a39d6069675db4ecfc1ab81d440da759a}{Vector}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector_afd524fac19e6d3d69db5198ffe2952b0}{$\sim$\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Copy Constructor \& Assignment Operator}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_ab0d8fe5b83853580c2ae7ef7d8e3e46c}{Vector}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other\+Vector)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector}{Vector}} \& \mbox{\hyperlink{class_vector_a6db2dde48d4fdd4237355735367457f1}{operator=}} (const \mbox{\hyperlink{class_vector}{Vector}} \&other\+Vector)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Accessors}\par
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{class_vector_a914e4bbc2ee74b7a8dcc1694b93df7db}{Get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Get the current capacity of the vector. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_vector_ab72cd45d42bfea0432b2780c504ea867}{Get\+Used}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of elements used in the vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_vector_a9c74fd822fb8b1c5f7eeaf7deaad9abc}{Is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Check on if \mbox{\hyperlink{class_vector}{Vector}} is empty. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{class_vector_ac4bcfa88c7ec4b2c8f62497490e9d156}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Pointer that points on the start of the vector index\mbox{[}0\mbox{]}. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{class_vector_a36d9a3e899ad2bf132e0f2a8dc43ffaa}{Finish}} ()
+\begin{DoxyCompactList}\small\item\em Pointer that points on the end of the vector index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Element Accessors}\par
+\begin{DoxyCompactItemize}
+\item 
+T \& \mbox{\hyperlink{class_vector_ae833c32400ab9a51ac9dc8b9f701ca96}{operator\mbox{[}$\,$\mbox{]}}} (const unsigned \&index)
+\begin{DoxyCompactList}\small\item\em Access an element by vector\textquotesingle{}s index. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_vector_af3652521441b1a6ef00d81d90c6eb1a3}{operator\mbox{[}$\,$\mbox{]}}} (const unsigned \&index) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Modifiers}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_vector_a0b4525d26f9397f327e6adb7c7eee22c}{Insert\+Last}} (const T \&object)
+\begin{DoxyCompactList}\small\item\em Insert an object to the end of the vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_vector_a78d8d9bb978a9a7821a02c101da13678}{Insert\+At}} (const T \&object, const unsigned \&index)
+\begin{DoxyCompactList}\small\item\em Insert an object to a desired index of the vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_vector_a451ca9a45740e49f1761e5ef43097c4e}{Remove\+Last}} ()
+\begin{DoxyCompactList}\small\item\em Removes an object on the end index of the vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_vector_ab83cc7f486d849b61a7899e32e666f5a}{Remove\+At}} (const unsigned \&index)
+\begin{DoxyCompactList}\small\item\em Removes an object on a desired index of the vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Vector$<$ T $>$}
+
+Defines a \mbox{\hyperlink{class_vector}{Vector}} Class, Dynamic Array Implementation. 
+
+$<$ \mbox{\hyperlink{class_vector}{Vector}} Class This class provides basic functionality for a dynamic array, it includes appending objects, accessing object by providing index, resizing of the dynamic array.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 23 of file Vector.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vector_a39d6069675db4ecfc1ab81d440da759a}\label{class_vector_a39d6069675db4ecfc1ab81d440da759a}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_vector}{Vector}}}
+
+
+
+Default constructor. 
+
+Initializes the vector with an initial capacity to two, sets the number of used elements to zero, and creates a new dynamic array on the heap memory with initial capacity of two. 
+
+Definition at line 239 of file Vector.\+h.
+
+\mbox{\Hypertarget{class_vector_afd524fac19e6d3d69db5198ffe2952b0}\label{class_vector_afd524fac19e6d3d69db5198ffe2952b0}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!````~Vector@{$\sim$Vector}}
+\index{````~Vector@{$\sim$Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Vector()}{~Vector()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_vector}{Vector}}}
+
+
+
+Destructor. 
+
+Frees the dynamically allocated memory for the vector by calling the Deallocate Method, Sets the capacity back to zero, Sets the number of used elements back to zero. 
+
+Definition at line 247 of file Vector.\+h.
+
+\mbox{\Hypertarget{class_vector_ab0d8fe5b83853580c2ae7ef7d8e3e46c}\label{class_vector_ab0d8fe5b83853580c2ae7ef7d8e3e46c}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_vector}{Vector}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other\+Vector }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+Creates a new vector as a copy of another vector by calling Copy\+Vector() method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other\+Vector} & The vector to be copied from. \\
+\hline
+\mbox{\texttt{ out}}  & {\em A} & newly constructed vector with context copied over. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 253 of file Vector.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vector_a36d9a3e899ad2bf132e0f2a8dc43ffaa}\label{class_vector_a36d9a3e899ad2bf132e0f2a8dc43ffaa}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Finish@{Finish}}
+\index{Finish@{Finish}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Finish()}{Finish()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T $\ast$ \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Finish}
+
+
+
+Pointer that points on the end of the vector index. 
+
+\begin{DoxyReturn}{Returns}
+The end of the vector index. 
+\end{DoxyReturn}
+
+
+Definition at line 301 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_a36d9a3e899ad2bf132e0f2a8dc43ffaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_a914e4bbc2ee74b7a8dcc1694b93df7db}\label{class_vector_a914e4bbc2ee74b7a8dcc1694b93df7db}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!GetCapacity@{GetCapacity}}
+\index{GetCapacity@{GetCapacity}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+unsigned \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Get\+Capacity}
+
+
+
+Get the current capacity of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The current capacity of the vector. 
+\end{DoxyReturn}
+
+
+Definition at line 277 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_a914e4bbc2ee74b7a8dcc1694b93df7db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_ab72cd45d42bfea0432b2780c504ea867}\label{class_vector_ab72cd45d42bfea0432b2780c504ea867}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!GetUsed@{GetUsed}}
+\index{GetUsed@{GetUsed}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetUsed()}{GetUsed()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+unsigned \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Get\+Used}
+
+
+
+Get the number of elements used in the vector. 
+
+\begin{DoxyReturn}{Returns}
+The number of used elements in the vector. 
+\end{DoxyReturn}
+
+
+Definition at line 283 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_ab72cd45d42bfea0432b2780c504ea867_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_a78d8d9bb978a9a7821a02c101da13678}\label{class_vector_a78d8d9bb978a9a7821a02c101da13678}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!InsertAt@{InsertAt}}
+\index{InsertAt@{InsertAt}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertAt()}{InsertAt()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Insert\+At (\begin{DoxyParamCaption}\item[{const T \&}]{object,  }\item[{const unsigned \&}]{index }\end{DoxyParamCaption})}
+
+
+
+Insert an object to a desired index of the vector. 
+
+Inserts the object from the user\textquotesingle{}s desired index in the vector. If the vector\textquotesingle{}s number of elements is half of the vector\textquotesingle{}s capacity, it will be resized to double its capacity by calling the Resize() method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to be inserted to the vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the operation was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 335 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_a78d8d9bb978a9a7821a02c101da13678_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_a0b4525d26f9397f327e6adb7c7eee22c}\label{class_vector_a0b4525d26f9397f327e6adb7c7eee22c}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!InsertLast@{InsertLast}}
+\index{InsertLast@{InsertLast}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertLast()}{InsertLast()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Insert\+Last (\begin{DoxyParamCaption}\item[{const T \&}]{object }\end{DoxyParamCaption})}
+
+
+
+Insert an object to the end of the vector. 
+
+If the vector\textquotesingle{}s number of elements is half of the vector\textquotesingle{}s capacity, it will be resized to double its capacity by calling the Resize() method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em object} & The object to be inserted to the vector end. \\
+\hline
+\mbox{\texttt{ out}}  & {\em True} & if the operation was successful, false otherwise. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean data type. 
+\end{DoxyReturn}
+
+
+Definition at line 319 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_a0b4525d26f9397f327e6adb7c7eee22c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_a9c74fd822fb8b1c5f7eeaf7deaad9abc}\label{class_vector_a9c74fd822fb8b1c5f7eeaf7deaad9abc}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Is\+Empty}
+
+
+
+Check on if \mbox{\hyperlink{class_vector}{Vector}} is empty. 
+
+\begin{DoxyReturn}{Returns}
+true if vector is empty, else not empty. 
+\end{DoxyReturn}
+
+
+Definition at line 289 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_vector_a9c74fd822fb8b1c5f7eeaf7deaad9abc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_a6db2dde48d4fdd4237355735367457f1}\label{class_vector_a6db2dde48d4fdd4237355735367457f1}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$ \&}]{other\+Vector }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+Assigns the contents of another vector to this vector, Checks if this \mbox{\hyperlink{class_vector}{Vector}} is the same as the other\+Vector and calls the Copy\+Vector method. Finally return $\ast$this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other\+Vector} & The vector to be assigned. \\
+\hline
+\mbox{\texttt{ out}}  & {\em A} & newly constructed vector with context copied over. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created \mbox{\hyperlink{class_vector}{Vector}} Object. 
+\end{DoxyReturn}
+
+
+Definition at line 263 of file Vector.\+h.
+
+\mbox{\Hypertarget{class_vector_ae833c32400ab9a51ac9dc8b9f701ca96}\label{class_vector_ae833c32400ab9a51ac9dc8b9f701ca96}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const unsigned \&}]{index }\end{DoxyParamCaption})}
+
+
+
+Access an element by vector\textquotesingle{}s index. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & The index of the element to access in the vector. \\
+\hline
+\mbox{\texttt{ out}}  & {\em The} & element content from the vector index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned element object. 
+\end{DoxyReturn}
+
+
+Definition at line 307 of file Vector.\+h.
+
+\mbox{\Hypertarget{class_vector_af3652521441b1a6ef00d81d90c6eb1a3}\label{class_vector_af3652521441b1a6ef00d81d90c6eb1a3}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \& \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const unsigned \&}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 313 of file Vector.\+h.
+
+\mbox{\Hypertarget{class_vector_ab83cc7f486d849b61a7899e32e666f5a}\label{class_vector_ab83cc7f486d849b61a7899e32e666f5a}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!RemoveAt@{RemoveAt}}
+\index{RemoveAt@{RemoveAt}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveAt()}{RemoveAt()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Remove\+At (\begin{DoxyParamCaption}\item[{const unsigned \&}]{index }\end{DoxyParamCaption})}
+
+
+
+Removes an object on a desired index of the vector. 
+
+Removes the object from the user\textquotesingle{}s desired index in the vector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em object} & The index of the element to be remove on the vector. \\
+\hline
+\mbox{\texttt{ out}}  & {\em True} & if the operation was successful, false otherwise. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean data type. 
+\end{DoxyReturn}
+
+
+Definition at line 366 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_ab83cc7f486d849b61a7899e32e666f5a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_a451ca9a45740e49f1761e5ef43097c4e}\label{class_vector_a451ca9a45740e49f1761e5ef43097c4e}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!RemoveLast@{RemoveLast}}
+\index{RemoveLast@{RemoveLast}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveLast()}{RemoveLast()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Remove\+Last}
+
+
+
+Removes an object on the end index of the vector. 
+
+Removes the object from the end index in the vector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em True} & if the operation was successful, false otherwise. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean data type. 
+\end{DoxyReturn}
+
+
+Definition at line 355 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_a451ca9a45740e49f1761e5ef43097c4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vector_ac4bcfa88c7ec4b2c8f62497490e9d156}\label{class_vector_ac4bcfa88c7ec4b2c8f62497490e9d156}} 
+\index{Vector$<$ T $>$@{Vector$<$ T $>$}!Start@{Start}}
+\index{Start@{Start}!Vector$<$ T $>$@{Vector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T $\ast$ \mbox{\hyperlink{class_vector}{Vector}}$<$ T $>$\+::Start}
+
+
+
+Pointer that points on the start of the vector index\mbox{[}0\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+The vector index \mbox{[}0\mbox{]}. 
+\end{DoxyReturn}
+
+
+Definition at line 295 of file Vector.\+h.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_ac4bcfa88c7ec4b2c8f62497490e9d156_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector_8h}{Vector.\+h}}\end{DoxyCompactItemize}

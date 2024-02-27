@@ -1,10 +1,13 @@
 
 /**
- * @file ICT283_AssignmentOne_WindSpeed.h
- * @brief Defines the WindSpeed class for representing the measurement of the wind speed.
- * @author Chan Kok Wai
- * @version 1.0.0
- */
+* @file WindSpeed.h
+* @brief WindSpeed class definition.
+*
+* This file contains the child definition of Measurement class.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef WINDSPEED_H_INCLUDED
 #define WINDSPEED_H_INCLUDED
 

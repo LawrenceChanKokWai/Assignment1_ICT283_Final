@@ -1,4 +1,12 @@
-
+/**
+* @file SensorRecType.cpp
+* @brief SensorRecType class implementation file
+*
+* This file contains the SensorRecType class implementation.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "SensorRecType.h"
 
 SensorRecType::SensorRecType()

@@ -1,0 +1,6 @@
+<map id="SensorRecType::SetSensorWindSpeed" name="SensorRecType::SetSensorWindSpeed">
+<area shape="rect" id="node1" title="Set the wind speed component of the sensor record." alt="" coords="241,23,424,65"/>
+<area shape="rect" id="node2" href="$_sensor_rec_type_8h.html#ae479725d9c81ade3fab712733263ffd8" title="Overloaded stream extraction operator for reading SensorRecType from an istream." alt="" coords="106,5,191,32"/>
+<area shape="rect" id="node3" href="$_sensor_rec_type_test_8cpp.html#a4211f20659d7d1523a8e6ed526795485" title=" " alt="" coords="104,56,193,83"/>
+<area shape="rect" id="node4" href="$_sensor_rec_type_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+</map>

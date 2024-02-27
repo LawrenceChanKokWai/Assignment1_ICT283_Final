@@ -1,0 +1,7 @@
+<map id="operator&lt;&lt;" name="operator&lt;&lt;">
+<area shape="rect" id="node1" title="Function: Overloaded stream insertion operator for Date class." alt="" coords="5,81,91,108"/>
+<area shape="rect" id="node2" href="$class_date.html#a6645ca88c5f417544415abe127dbeaba" title="Method that allows retrieving the day that is associated with the Date class." alt="" coords="159,5,260,32"/>
+<area shape="rect" id="node3" href="$class_date.html#aa316776e60e28ae20a710bcf6d96b7b8" title="Method that allows retrieving the month that is associated with the Date class." alt="" coords="152,56,267,83"/>
+<area shape="rect" id="node4" href="$class_date.html#adb6f84b444ecf60bd8577be22de74fe2" title="Method that allows retrieving the month in string with the Date class." alt="" coords="139,107,280,133"/>
+<area shape="rect" id="node5" href="$class_date.html#ad3519b229e188cca67c764352929ea83" title="Method that allows retrieving the year that is associated with the Date class." alt="" coords="157,157,262,184"/>
+</map>

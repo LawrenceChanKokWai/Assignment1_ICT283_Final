@@ -1,0 +1,9 @@
+<map id="SensorRecType::GetSensorTime" name="SensorRecType::GetSensorTime">
+<area shape="rect" id="node1" title="Get the time component of the sensor record." alt="" coords="351,107,563,133"/>
+<area shape="rect" id="node2" href="$_sensor_rec_type_8h.html#a550b7a9392969887ddd57c9add2f5bfd" title="Overloaded stream insertion operator for outputting SensorRecType to an ostream." alt="" coords="161,5,246,32"/>
+<area shape="rect" id="node3" href="$_sensor_rec_type_test_8cpp.html#a4013ea076142e387414baefc11fc59ff" title=" " alt="" coords="126,56,281,83"/>
+<area shape="rect" id="node5" href="$_sensor_rec_type_test_8cpp.html#a114d9b5ff35b7ff4adaf32935e8071e5" title=" " alt="" coords="158,107,249,133"/>
+<area shape="rect" id="node6" href="$_sensor_rec_type_test_8cpp.html#a1116777681a544b41d289df53457882e" title=" " alt="" coords="104,157,303,184"/>
+<area shape="rect" id="node7" href="$_sensor_rec_type_test_8cpp.html#a4211f20659d7d1523a8e6ed526795485" title=" " alt="" coords="159,208,248,235"/>
+<area shape="rect" id="node4" href="$_sensor_rec_type_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,132,56,159"/>
+</map>

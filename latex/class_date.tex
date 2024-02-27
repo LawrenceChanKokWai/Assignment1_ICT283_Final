@@ -1,0 +1,304 @@
+\hypertarget{class_date}{}\doxysection{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+
+
+Represents a date for the measurements.  
+
+
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+
+
+Collaboration diagram for Date\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_date__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_date_aebecb25915744f99550a9e2bb5a06b63}{Date}} (const unsigned \&day, const unsigned \&month, const unsigned \&year)
+\begin{DoxyCompactList}\small\item\em Parameterized Constructor For The \mbox{\hyperlink{class_date}{Date}} Class. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_date_a6645ca88c5f417544415abe127dbeaba}{Get\+Day}} () const
+\begin{DoxyCompactList}\small\item\em Method that allows retrieving the day that is associated with the \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_date_aa316776e60e28ae20a710bcf6d96b7b8}{Get\+Month}} () const
+\begin{DoxyCompactList}\small\item\em Method that allows retrieving the month that is associated with the \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_date_ad3519b229e188cca67c764352929ea83}{Get\+Year}} () const
+\begin{DoxyCompactList}\small\item\em Method that allows retrieving the year that is associated with the \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_aa10bb7c41d0aaa084790f48dd9dbffd9}{Set\+Day}} (const unsigned \&day)
+\begin{DoxyCompactList}\small\item\em Method that allows setting the day associated with the \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_a66c5ea64f0337c094c58df64ad9b0c0e}{Set\+Month}} (const unsigned \&month)
+\begin{DoxyCompactList}\small\item\em Method that allows setting the month associated with the \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_a732cdd3dafa961d7c11b3252ad95ddbd}{Set\+Year}} (const unsigned \&year)
+\begin{DoxyCompactList}\small\item\em Method that allows setting the year associated with the \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_date_a4f0329cead08f44bbccfe186c994d545}{operator==}} (const \mbox{\hyperlink{class_date}{Date}} \&other\+Date) const
+\begin{DoxyCompactList}\small\item\em Overloaded equality operator for \mbox{\hyperlink{class_date}{Date}} objects. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_date_adb6f84b444ecf60bd8577be22de74fe2}{Get\+Month\+In\+Str}} (const unsigned \&month) const
+\begin{DoxyCompactList}\small\item\em Method that allows retrieving the month in string with the \mbox{\hyperlink{class_date}{Date}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a date for the measurements. 
+
+Definition at line 22 of file Date.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \mbox{\hyperlink{class_date}{Date}} class. 
+
+This constructor creates a \mbox{\hyperlink{class_date}{Date}} object with default values for day, month, and year attributes that is set as 0. 
+
+Definition at line 12 of file Date.\+cpp.
+
+\mbox{\Hypertarget{class_date_aebecb25915744f99550a9e2bb5a06b63}\label{class_date_aebecb25915744f99550a9e2bb5a06b63}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{const unsigned \&}]{day,  }\item[{const unsigned \&}]{month,  }\item[{const unsigned \&}]{year }\end{DoxyParamCaption})}
+
+
+
+Parameterized Constructor For The \mbox{\hyperlink{class_date}{Date}} Class. 
+
+This constructor creates a \mbox{\hyperlink{class_date}{Date}} Class with user defined values for the day, month, and year as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & The day associated with the date. \\
+\hline
+{\em month} & The month associated with the date. \\
+\hline
+{\em year} & The year associated with the date. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file Date.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_date_a6645ca88c5f417544415abe127dbeaba}\label{class_date_a6645ca88c5f417544415abe127dbeaba}} 
+\index{Date@{Date}!GetDay@{GetDay}}
+\index{GetDay@{GetDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{GetDay()}{GetDay()}}
+{\footnotesize\ttfamily unsigned Date\+::\+Get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that allows retrieving the day that is associated with the \mbox{\hyperlink{class_date}{Date}} class. 
+
+\begin{DoxyReturn}{Returns}
+unsigned data type of the day associated with the date. 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_a6645ca88c5f417544415abe127dbeaba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_aa316776e60e28ae20a710bcf6d96b7b8}\label{class_date_aa316776e60e28ae20a710bcf6d96b7b8}} 
+\index{Date@{Date}!GetMonth@{GetMonth}}
+\index{GetMonth@{GetMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{GetMonth()}{GetMonth()}}
+{\footnotesize\ttfamily unsigned Date\+::\+Get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that allows retrieving the month that is associated with the \mbox{\hyperlink{class_date}{Date}} class. 
+
+\begin{DoxyReturn}{Returns}
+unsigned data type of the month associated with the date. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_aa316776e60e28ae20a710bcf6d96b7b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_adb6f84b444ecf60bd8577be22de74fe2}\label{class_date_adb6f84b444ecf60bd8577be22de74fe2}} 
+\index{Date@{Date}!GetMonthInStr@{GetMonthInStr}}
+\index{GetMonthInStr@{GetMonthInStr}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{GetMonthInStr()}{GetMonthInStr()}}
+{\footnotesize\ttfamily string Date\+::\+Get\+Month\+In\+Str (\begin{DoxyParamCaption}\item[{const unsigned \&}]{month }\end{DoxyParamCaption}) const}
+
+
+
+Method that allows retrieving the month in string with the \mbox{\hyperlink{class_date}{Date}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & referencing the month in string. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_adb6f84b444ecf60bd8577be22de74fe2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_ad3519b229e188cca67c764352929ea83}\label{class_date_ad3519b229e188cca67c764352929ea83}} 
+\index{Date@{Date}!GetYear@{GetYear}}
+\index{GetYear@{GetYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{GetYear()}{GetYear()}}
+{\footnotesize\ttfamily unsigned Date\+::\+Get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that allows retrieving the year that is associated with the \mbox{\hyperlink{class_date}{Date}} class. 
+
+\begin{DoxyReturn}{Returns}
+unsigned data type of the year associated with the date. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_ad3519b229e188cca67c764352929ea83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_a4f0329cead08f44bbccfe186c994d545}\label{class_date_a4f0329cead08f44bbccfe186c994d545}} 
+\index{Date@{Date}!operator==@{operator==}}
+\index{operator==@{operator==}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Date\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{other\+Date }\end{DoxyParamCaption}) const}
+
+
+
+Overloaded equality operator for \mbox{\hyperlink{class_date}{Date}} objects. 
+
+This operator checks whether two \mbox{\hyperlink{class_date}{Date}} objects have the same day, month, and minute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other\+Date} & The \mbox{\hyperlink{class_date}{Date}} object to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the day, month, and minute of both \mbox{\hyperlink{class_date}{Date}} objects are equal, false otherwise.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_time}{Time}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 56 of file Date.\+cpp.
+
+\mbox{\Hypertarget{class_date_aa10bb7c41d0aaa084790f48dd9dbffd9}\label{class_date_aa10bb7c41d0aaa084790f48dd9dbffd9}} 
+\index{Date@{Date}!SetDay@{SetDay}}
+\index{SetDay@{SetDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{SetDay()}{SetDay()}}
+{\footnotesize\ttfamily void Date\+::\+Set\+Day (\begin{DoxyParamCaption}\item[{const unsigned \&}]{day }\end{DoxyParamCaption})}
+
+
+
+Method that allows setting the day associated with the \mbox{\hyperlink{class_date}{Date}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & referenced day with the \mbox{\hyperlink{class_date}{Date}} class. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_date_aa10bb7c41d0aaa084790f48dd9dbffd9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_a66c5ea64f0337c094c58df64ad9b0c0e}\label{class_date_a66c5ea64f0337c094c58df64ad9b0c0e}} 
+\index{Date@{Date}!SetMonth@{SetMonth}}
+\index{SetMonth@{SetMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{SetMonth()}{SetMonth()}}
+{\footnotesize\ttfamily void Date\+::\+Set\+Month (\begin{DoxyParamCaption}\item[{const unsigned \&}]{month }\end{DoxyParamCaption})}
+
+
+
+Method that allows setting the month associated with the \mbox{\hyperlink{class_date}{Date}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & referenced month with the \mbox{\hyperlink{class_date}{Date}} class. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_date_a66c5ea64f0337c094c58df64ad9b0c0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_a732cdd3dafa961d7c11b3252ad95ddbd}\label{class_date_a732cdd3dafa961d7c11b3252ad95ddbd}} 
+\index{Date@{Date}!SetYear@{SetYear}}
+\index{SetYear@{SetYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{SetYear()}{SetYear()}}
+{\footnotesize\ttfamily void Date\+::\+Set\+Year (\begin{DoxyParamCaption}\item[{const unsigned \&}]{year }\end{DoxyParamCaption})}
+
+
+
+Method that allows setting the year associated with the \mbox{\hyperlink{class_date}{Date}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & referenced year with the \mbox{\hyperlink{class_date}{Date}} class. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_date_a732cdd3dafa961d7c11b3252ad95ddbd_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_date_8h}{Date.\+h}}\item 
+\mbox{\hyperlink{_date_8cpp}{Date.\+cpp}}\end{DoxyCompactItemize}

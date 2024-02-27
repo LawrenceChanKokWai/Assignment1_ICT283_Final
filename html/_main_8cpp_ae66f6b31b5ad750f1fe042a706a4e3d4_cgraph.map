@@ -1,0 +1,26 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,411,56,437"/>
+<area shape="rect" id="node2" href="$class_solar_radiation.html#a710d2247c0715d0d1939518ec2705086" title=" " alt="" coords="115,5,295,32"/>
+<area shape="rect" id="node3" href="$class_wind_speed.html#a4bfce74728c30f567ca08c4e18c5e8b5" title=" " alt="" coords="124,56,287,83"/>
+<area shape="rect" id="node4" href="$class_processor.html#a66f8568b6dd32f6ca5bc180dae4bbc9f" title="Returns the singleton instance of Processor." alt="" coords="126,107,285,133"/>
+<area shape="rect" id="node5" href="$class_date.html#adb6f84b444ecf60bd8577be22de74fe2" title="Method that allows retrieving the month in string with the Date class." alt="" coords="135,157,276,184"/>
+<area shape="rect" id="node6" href="$class_map_aov.html#a3d8b23b405c0f8e536ad0a028e4cd9e3" title="Get a constant reference to the sensor data map." alt="" coords="123,208,288,235"/>
+<area shape="rect" id="node7" href="$class_sensor_rec_type.html#a7e94391ece6b543bc24c6c053e1db5e7" title="Get the date component of the sensor record." alt="" coords="627,252,837,279"/>
+<area shape="rect" id="node8" href="$class_sensor_rec_type.html#a8db3069b5130feb64cc65135e85e8dc4" title="Get the solar radiation component of the sensor record." alt="" coords="113,527,297,569"/>
+<area shape="rect" id="node9" href="$class_sensor_rec_type.html#a099718254fa5b11d646fc4a9e9b2244d" title="Get the wind speed component of the sensor record." alt="" coords="113,593,297,634"/>
+<area shape="rect" id="node10" href="$namespace_constant.html#a78f2bc44b4c0903e6cac64ab409367a2" title="Returns an information message." alt="" coords="411,709,523,736"/>
+<area shape="rect" id="node11" href="$class_vector.html#a9c74fd822fb8b1c5f7eeaf7deaad9abc" title="Check on if Vector is empty." alt="" coords="147,811,263,837"/>
+<area shape="rect" id="node12" href="$class_processor.html#a79bc4ad79ada68780784832695a3758d" title="Loads CSV data from a vector of file paths into a vector of WindRecType objects." alt="" coords="120,309,291,336"/>
+<area shape="rect" id="node17" href="$class_processor.html#a248511764e3ce60ee72f8ae8fd0d47c9" title="Loads the CSV file paths from an txt file and stream into a vector." alt="" coords="109,862,301,903"/>
+<area shape="rect" id="node19" href="$class_map_aov.html#a9508eaebeb7e5287e79413d4cd17b75c" title="Switch function to compute the mean of different types of measurements." alt="" coords="105,462,305,503"/>
+<area shape="rect" id="node20" href="$class_map_aov.html#a5e705c269f69df8a06a83b0c7420c62b" title="Switch function to compute the sum of different types of measurements." alt="" coords="369,470,564,511"/>
+<area shape="rect" id="node21" href="$class_input_validator.html#aa8aa998dfb86b883a11cf4c2195d550f" title="Validates user input for month." alt="" coords="104,709,307,736"/>
+<area shape="rect" id="node23" href="$class_map_aov.html#ad0fe071b921e66c923ae9980fb8bf601" title="Switch function to compute the sample standard deviation of different types of measurements." alt="" coords="355,405,579,446"/>
+<area shape="rect" id="node24" href="$class_input_validator.html#adafc081b7b324c0f458e7b05dadaed8c" title="Validates user input for year." alt="" coords="109,760,302,787"/>
+<area shape="rect" id="node13" href="$class_vector.html#ab72cd45d42bfea0432b2780c504ea867" title="Get the number of elements used in the vector." alt="" coords="673,445,791,472"/>
+<area shape="rect" id="node14" href="$class_map_aov.html#af369ca9b570f5b24daf8c9d211d7db06" title="Insert sensor data into the map consisted with array of Vectors." alt="" coords="379,303,555,329"/>
+<area shape="rect" id="node15" href="$class_date.html#aa316776e60e28ae20a710bcf6d96b7b8" title="Method that allows retrieving the month that is associated with the Date class." alt="" coords="675,303,789,329"/>
+<area shape="rect" id="node16" href="$class_date.html#ad3519b229e188cca67c764352929ea83" title="Method that allows retrieving the year that is associated with the Date class." alt="" coords="679,353,785,380"/>
+<area shape="rect" id="node18" href="$class_vector.html#a0b4525d26f9397f327e6adb7c7eee22c" title="Insert an object to the end of the vector." alt="" coords="404,869,529,896"/>
+<area shape="rect" id="node22" href="$namespace_constant.html#a3b30e2d2a7a08b7f334e56853fef4a6e" title="Returns a status message based on a condition." alt="" coords="401,760,533,787"/>
+</map>

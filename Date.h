@@ -16,6 +16,9 @@
 
 using namespace std;
 
+/**
+ * @brief Represents a date for the measurements.
+ */
 class Date
 {
 public:

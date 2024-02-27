@@ -1,0 +1,24 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,427,56,453"/>
+<area shape="rect" id="node2" href="$_sensor_rec_type_test_8cpp.html#a4013ea076142e387414baefc11fc59ff" title=" " alt="" coords="126,325,281,352"/>
+<area shape="rect" id="node15" href="$_sensor_rec_type_test_8cpp.html#a114d9b5ff35b7ff4adaf32935e8071e5" title=" " alt="" coords="158,401,249,428"/>
+<area shape="rect" id="node16" href="$_sensor_rec_type_test_8cpp.html#a1116777681a544b41d289df53457882e" title=" " alt="" coords="104,452,303,479"/>
+<area shape="rect" id="node17" href="$_sensor_rec_type_test_8cpp.html#a4211f20659d7d1523a8e6ed526795485" title=" " alt="" coords="159,551,248,577"/>
+<area shape="rect" id="node3" href="$_sensor_rec_type_test_8cpp.html#a01e7eae59fea72cf3807e3f363eda271" title=" " alt="" coords="427,325,487,352"/>
+<area shape="rect" id="node4" href="$class_date.html#a6645ca88c5f417544415abe127dbeaba" title="Method that allows retrieving the day that is associated with the Date class." alt="" coords="406,56,507,83"/>
+<area shape="rect" id="node5" href="$class_time.html#a468cb29f77bc1b290df3e63a87164c30" title="Method that allows retrieving the hour that is associated with the Time class." alt="" coords="403,107,510,133"/>
+<area shape="rect" id="node6" href="$class_measurement.html#aecf8d91022eefcfc28ca06b72b716eab" title="Getter for the measurement variable." alt="" coords="352,376,561,403"/>
+<area shape="rect" id="node7" href="$class_time.html#a5e9c43cb59f31cf7e0b8b1df79227e09" title="Method that allows retrieving the minute that is associated with the Time class." alt="" coords="397,157,516,184"/>
+<area shape="rect" id="node8" href="$class_date.html#aa316776e60e28ae20a710bcf6d96b7b8" title="Method that allows retrieving the month that is associated with the Date class." alt="" coords="399,208,514,235"/>
+<area shape="rect" id="node9" href="$class_sensor_rec_type.html#a7e94391ece6b543bc24c6c053e1db5e7" title="Get the date component of the sensor record." alt="" coords="351,427,562,453"/>
+<area shape="rect" id="node10" href="$class_sensor_rec_type.html#a8db3069b5130feb64cc65135e85e8dc4" title="Get the solar radiation component of the sensor record." alt="" coords="365,478,549,519"/>
+<area shape="rect" id="node11" href="$class_sensor_rec_type.html#a09dbaa29cf929cba9a46dc1ec0d198a0" title="Get the temperature component of the sensor record." alt="" coords="365,543,549,585"/>
+<area shape="rect" id="node12" href="$class_sensor_rec_type.html#a7fd301433186563da2d1e8a009cbd5c1" title="Get the time component of the sensor record." alt="" coords="351,609,563,636"/>
+<area shape="rect" id="node13" href="$class_sensor_rec_type.html#a099718254fa5b11d646fc4a9e9b2244d" title="Get the wind speed component of the sensor record." alt="" coords="365,259,549,301"/>
+<area shape="rect" id="node14" href="$class_date.html#ad3519b229e188cca67c764352929ea83" title="Method that allows retrieving the year that is associated with the Date class." alt="" coords="404,5,509,32"/>
+<area shape="rect" id="node18" href="$class_sensor_rec_type.html#a21bdf6964ebdf4edda603c0c70339d9f" title="Set the date component of the sensor record." alt="" coords="351,727,562,753"/>
+<area shape="rect" id="node19" href="$class_sensor_rec_type.html#a3d4d71e19febdb42520ad458a782c78b" title="Set the solar radiation component of the sensor record." alt="" coords="365,778,548,819"/>
+<area shape="rect" id="node20" href="$class_sensor_rec_type.html#ae0d0b0bed581cb259c4ba92ce44d0cb9" title="Set the temperature component of the sensor record." alt="" coords="365,843,548,885"/>
+<area shape="rect" id="node21" href="$class_sensor_rec_type.html#a1251567e0ca976e70674bfb3eb271366" title="Set the time component of the sensor record." alt="" coords="351,909,562,936"/>
+<area shape="rect" id="node22" href="$class_sensor_rec_type.html#a56b7dbcebdda106e3dcf3a99fa81dbaf" title="Set the wind speed component of the sensor record." alt="" coords="365,661,548,702"/>
+</map>

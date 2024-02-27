@@ -1,0 +1,5 @@
+<map id="Processor::OutputStreamMeasurement" name="Processor::OutputStreamMeasurement">
+<area shape="rect" id="node1" title="Records sensor data to an output file and computes statistical measurements." alt="" coords="5,31,255,57"/>
+<area shape="rect" id="node2" href="$class_date.html#adb6f84b444ecf60bd8577be22de74fe2" title="Method that allows retrieving the month in string with the Date class." alt="" coords="337,5,479,32"/>
+<area shape="rect" id="node3" href="$class_sensor_rec_type.html#a7e94391ece6b543bc24c6c053e1db5e7" title="Get the date component of the sensor record." alt="" coords="303,56,513,83"/>
+</map>

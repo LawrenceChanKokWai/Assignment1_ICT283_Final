@@ -1,0 +1,118 @@
+\hypertarget{_sensor_rec_type_8h}{}\doxysection{Sensor\+Rec\+Type.\+h File Reference}
+\label{_sensor_rec_type_8h}\index{SensorRecType.h@{SensorRecType.h}}
+
+
+\mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} class definition.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Date.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wind\+Speed.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Solar\+Radiation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Temperature.\+h\char`\"{}}\newline
+Include dependency graph for Sensor\+Rec\+Type.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_sensor_rec_type_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_sensor_rec_type_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}}
+\begin{DoxyCompactList}\small\item\em Represents a sensor record type with date, time, wind speed, temperature, solar radiation components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{_sensor_rec_type_8h_a550b7a9392969887ddd57c9add2f5bfd}{operator$<$$<$}} (ostream \&output, const \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&S\+RT)
+\begin{DoxyCompactList}\small\item\em Overloaded stream insertion operator for outputting \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} to an ostream. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{_sensor_rec_type_8h_ae479725d9c81ade3fab712733263ffd8}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&S\+RT)
+\begin{DoxyCompactList}\small\item\em Overloaded stream extraction operator for reading \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} from an istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} class definition. 
+
+This file contains the composition definition of \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} class. This class is encapsulates information about a specific sensor record, including date, time, wind speed, solar radiation, and temperature. It provides methods to retrieve and set these components..
+
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai ( Student Number\+: 33924804 ) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_sensor_rec_type_8h_a550b7a9392969887ddd57c9add2f5bfd}\label{_sensor_rec_type_8h_a550b7a9392969887ddd57c9add2f5bfd}} 
+\index{SensorRecType.h@{SensorRecType.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SensorRecType.h@{SensorRecType.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{output,  }\item[{const \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&}]{S\+RT }\end{DoxyParamCaption})}
+
+
+
+Overloaded stream insertion operator for outputting \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} to an ostream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em output} & The output stream. \\
+\hline
+\mbox{\texttt{ in}}  & {\em S\+RT} & The \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} object to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the output stream. 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file Sensor\+Rec\+Type.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{_sensor_rec_type_8h_a550b7a9392969887ddd57c9add2f5bfd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_sensor_rec_type_8h_ae479725d9c81ade3fab712733263ffd8}\label{_sensor_rec_type_8h_ae479725d9c81ade3fab712733263ffd8}} 
+\index{SensorRecType.h@{SensorRecType.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!SensorRecType.h@{SensorRecType.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&}]{S\+RT }\end{DoxyParamCaption})}
+
+
+
+Overloaded stream extraction operator for reading \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} from an istream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em input} & The input stream. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em S\+RT} & The \mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} object to populate from the input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the input stream. 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Sensor\+Rec\+Type.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{_sensor_rec_type_8h_ae479725d9c81ade3fab712733263ffd8_cgraph}
+\end{center}
+\end{figure}

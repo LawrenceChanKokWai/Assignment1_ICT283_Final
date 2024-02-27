@@ -1,3 +1,13 @@
+/**
+* @file Constant.h
+* @brief Constant namespace class definition.
+*
+* This file contains the namespaces of the Constant class.
+* The class allows easy access to strings that are used in the whole application.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef CONSTANT_H_INCLUDED
 #define CONSTANT_H_INCLUDED
 

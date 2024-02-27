@@ -1,0 +1,10 @@
+<map id="TestSetters" name="TestSetters">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,95,184"/>
+<area shape="rect" id="node2" href="$_date_test_8cpp.html#a01e7eae59fea72cf3807e3f363eda271" title=" " alt="" coords="170,5,230,32"/>
+<area shape="rect" id="node3" href="$class_date.html#a6645ca88c5f417544415abe127dbeaba" title="Method that allows retrieving the day that is associated with the Date class." alt="" coords="149,56,251,83"/>
+<area shape="rect" id="node4" href="$class_date.html#aa316776e60e28ae20a710bcf6d96b7b8" title="Method that allows retrieving the month that is associated with the Date class." alt="" coords="143,107,257,133"/>
+<area shape="rect" id="node5" href="$class_date.html#ad3519b229e188cca67c764352929ea83" title="Method that allows retrieving the year that is associated with the Date class." alt="" coords="147,157,253,184"/>
+<area shape="rect" id="node6" href="$class_date.html#aa10bb7c41d0aaa084790f48dd9dbffd9" title="Method that allows setting the day associated with the Date class." alt="" coords="150,208,250,235"/>
+<area shape="rect" id="node7" href="$class_date.html#a66c5ea64f0337c094c58df64ad9b0c0e" title="Method that allows setting the month associated with the Date class." alt="" coords="143,259,257,285"/>
+<area shape="rect" id="node8" href="$class_date.html#a732cdd3dafa961d7c11b3252ad95ddbd" title="Method that allows setting the year associated with the Date class." alt="" coords="148,309,252,336"/>
+</map>

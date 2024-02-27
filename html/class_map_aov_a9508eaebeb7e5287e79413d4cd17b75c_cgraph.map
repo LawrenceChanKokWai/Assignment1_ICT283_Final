@@ -1,0 +1,5 @@
+<map id="MapAov::MeanOfMeasurementSwitch" name="MapAov::MeanOfMeasurementSwitch">
+<area shape="rect" id="node1" title="Switch function to compute the mean of different types of measurements." alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="$class_vector.html#ab72cd45d42bfea0432b2780c504ea867" title="Get the number of elements used in the vector." alt="" coords="496,13,615,39"/>
+<area shape="rect" id="node3" href="$class_map_aov.html#a5e705c269f69df8a06a83b0c7420c62b" title="Switch function to compute the sum of different types of measurements." alt="" coords="253,35,448,76"/>
+</map>

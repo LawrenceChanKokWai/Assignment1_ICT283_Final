@@ -1,0 +1,13 @@
+<map id="SensorRecType.h" name="SensorRecType.h">
+<area shape="rect" id="node1" title="SensorRecType class definition." alt="" coords="217,5,343,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="200,155,272,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="626,80,681,107"/>
+<area shape="rect" id="node4" href="$_date_8h.html" title="Date class definition." alt="" coords="94,80,154,107"/>
+<area shape="rect" id="node5" href="$_time_8h.html" title="Time class definition." alt="" coords="8,80,69,107"/>
+<area shape="rect" id="node7" href="$_wind_speed_8h.html" title="WindSpeed class definition." alt="" coords="230,80,330,107"/>
+<area shape="rect" id="node10" href="$_solar_radiation_8h.html" title="SolarRadiation class definition." alt="" coords="355,80,472,107"/>
+<area shape="rect" id="node11" href="$_temperature_8h.html" title="Temperature class definition." alt="" coords="497,80,602,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,155,72,181"/>
+<area shape="rect" id="node8" href="$_measurement_8h.html" title="Measurement class definition." alt="" coords="357,155,469,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="384,229,443,256"/>
+</map>

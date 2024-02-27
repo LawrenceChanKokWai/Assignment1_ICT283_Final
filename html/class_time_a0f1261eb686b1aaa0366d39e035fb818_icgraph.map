@@ -1,0 +1,6 @@
+<map id="Time::SetHour" name="Time::SetHour">
+<area shape="rect" id="node1" title="Method that allows setting the hour associated with the Time class." alt="" coords="241,31,347,57"/>
+<area shape="rect" id="node2" href="$_time_8h.html#a7edd6ddded2629b1909953202d397eea" title="Function: Overloaded stream extraction operator for Time class." alt="" coords="106,5,191,32"/>
+<area shape="rect" id="node3" href="$_time_test_8cpp.html#aec9b862ad01f148b02d9b3b6d55d467e" title=" " alt="" coords="104,56,193,83"/>
+<area shape="rect" id="node4" href="$_time_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
+</map>

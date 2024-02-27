@@ -1,0 +1,192 @@
+\hypertarget{class_processor}{}\doxysection{Processor Class Reference}
+\label{class_processor}\index{Processor@{Processor}}
+
+
+The \mbox{\hyperlink{class_processor}{Processor}} class handles processing of C\+SV data as a singleton.  
+
+
+
+
+{\ttfamily \#include $<$Processor.\+h$>$}
+
+
+
+Collaboration diagram for Processor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_processor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_processor_a248511764e3ce60ee72f8ae8fd0d47c9}{Load\+C\+S\+V\+File\+Path\+To\+Vector}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ string $>$ \&csv\+File\+Path, ifstream \&input, const string \&filename)
+\begin{DoxyCompactList}\small\item\em Loads the C\+SV file paths from an txt file and stream into a vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_processor_a79bc4ad79ada68780784832695a3758d}{Load\+C\+S\+V\+Data}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ string $>$ \&csv\+File\+Path, \mbox{\hyperlink{class_map_aov}{Map\+Aov}} \&map\+Aov)
+\begin{DoxyCompactList}\small\item\em Loads C\+SV data from a vector of file paths into a vector of Wind\+Rec\+Type objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_processor_a9ffca81c2e7aee9a5194e5d6f62d2ee4}{Output\+Stream\+Measurement}} (\mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&sensor\+Rec\+Type, ofstream \&output\+File, unsigned \&month, float \&speed\+Mean, float \&speed\+Ssd, float \&temp\+Mean, float \&temp\+Ssd, float \&sr\+Sum)
+\begin{DoxyCompactList}\small\item\em Records sensor data to an output file and computes statistical measurements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_processor}{Processor}} \& \mbox{\hyperlink{class_processor_a66f8568b6dd32f6ca5bc180dae4bbc9f}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns the singleton instance of \mbox{\hyperlink{class_processor}{Processor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_processor}{Processor}} class handles processing of C\+SV data as a singleton. 
+
+This class provides functionality to load C\+SV file paths from a txt file and processes data into vectors, and perform other processing tasks. It follows the singleton design pattern. 
+
+Definition at line 29 of file Processor.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_processor_a66f8568b6dd32f6ca5bc180dae4bbc9f}\label{class_processor_a66f8568b6dd32f6ca5bc180dae4bbc9f}} 
+\index{Processor@{Processor}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_processor}{Processor}} \& Processor\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the singleton instance of \mbox{\hyperlink{class_processor}{Processor}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_processor}{Processor}}\& A reference to the singleton instance. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Processor.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_processor_a66f8568b6dd32f6ca5bc180dae4bbc9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_processor_a79bc4ad79ada68780784832695a3758d}\label{class_processor_a79bc4ad79ada68780784832695a3758d}} 
+\index{Processor@{Processor}!LoadCSVData@{LoadCSVData}}
+\index{LoadCSVData@{LoadCSVData}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{LoadCSVData()}{LoadCSVData()}}
+{\footnotesize\ttfamily void Processor\+::\+Load\+C\+S\+V\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ string $>$ \&}]{csv\+File\+Path,  }\item[{\mbox{\hyperlink{class_map_aov}{Map\+Aov}} \&}]{map\+Aov }\end{DoxyParamCaption})}
+
+
+
+Loads C\+SV data from a vector of file paths into a vector of Wind\+Rec\+Type objects. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em csv\+File\+Path} & The vector containing the C\+SV file paths. \\
+\hline
+\mbox{\texttt{ in}}  & {\em wind\+Rec\+Type\+Vec} & The vector to store the Wind\+Rec\+Type objects. \\
+\hline
+\mbox{\texttt{ in}}  & {\em wind\+Rec\+Type} & An object of type Wind\+Rec\+Type. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Processor.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_processor_a79bc4ad79ada68780784832695a3758d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_processor_a79bc4ad79ada68780784832695a3758d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_processor_a248511764e3ce60ee72f8ae8fd0d47c9}\label{class_processor_a248511764e3ce60ee72f8ae8fd0d47c9}} 
+\index{Processor@{Processor}!LoadCSVFilePathToVector@{LoadCSVFilePathToVector}}
+\index{LoadCSVFilePathToVector@{LoadCSVFilePathToVector}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{LoadCSVFilePathToVector()}{LoadCSVFilePathToVector()}}
+{\footnotesize\ttfamily void Processor\+::\+Load\+C\+S\+V\+File\+Path\+To\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ string $>$ \&}]{csv\+File\+Path,  }\item[{ifstream \&}]{input,  }\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the C\+SV file paths from an txt file and stream into a vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em csv\+File\+Path} & The vector to store the C\+SV file paths. \\
+\hline
+\mbox{\texttt{ in}}  & {\em input} & The input stream from which to read the file paths. \\
+\hline
+\mbox{\texttt{ in}}  & {\em filename} & The name of the txt file being loaded. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Processor.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_processor_a248511764e3ce60ee72f8ae8fd0d47c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_processor_a248511764e3ce60ee72f8ae8fd0d47c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_processor_a9ffca81c2e7aee9a5194e5d6f62d2ee4}\label{class_processor_a9ffca81c2e7aee9a5194e5d6f62d2ee4}} 
+\index{Processor@{Processor}!OutputStreamMeasurement@{OutputStreamMeasurement}}
+\index{OutputStreamMeasurement@{OutputStreamMeasurement}!Processor@{Processor}}
+\doxysubsubsection{\texorpdfstring{OutputStreamMeasurement()}{OutputStreamMeasurement()}}
+{\footnotesize\ttfamily bool Processor\+::\+Output\+Stream\+Measurement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_rec_type}{Sensor\+Rec\+Type}} \&}]{sensor\+Rec\+Type,  }\item[{ofstream \&}]{output\+File,  }\item[{unsigned \&}]{month,  }\item[{float \&}]{speed\+Mean,  }\item[{float \&}]{speed\+Ssd,  }\item[{float \&}]{temp\+Mean,  }\item[{float \&}]{temp\+Ssd,  }\item[{float \&}]{sr\+Sum }\end{DoxyParamCaption})}
+
+
+
+Records sensor data to an output file and computes statistical measurements. 
+
+This function records sensor data to the specified output file and calculates statistical measurements including mean and standard deviation for speed and temperature readings, as well as the sum of sensor readings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sensor\+Rec\+Type} & Reference to the sensor record type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em output\+File} & Reference to the ofstream. \\
+\hline
+\mbox{\texttt{ in}}  & {\em month} & Reference to the month for which data is recorded. \\
+\hline
+\mbox{\texttt{ in}}  & {\em speed\+Mean} & Reference to store the mean value of speed readings. \\
+\hline
+\mbox{\texttt{ in}}  & {\em speed\+Ssd} & Reference to store the standard deviation of speed readings. \\
+\hline
+\mbox{\texttt{ in}}  & {\em temp\+Mean} & Reference to store the mean value of temperature readings. \\
+\hline
+\mbox{\texttt{ in}}  & {\em temp\+Ssd} & Reference to store the standard deviation of temperature readings. \\
+\hline
+\mbox{\texttt{ in}}  & {\em sr\+Sum} & Reference to store the sum of sensor readings. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file Processor.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_processor_a9ffca81c2e7aee9a5194e5d6f62d2ee4_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_processor_8h}{Processor.\+h}}\item 
+\mbox{\hyperlink{_processor_8cpp}{Processor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,12 @@
-
+/**
+* @file VectorTest.cpp
+* @brief Vector Test execution file
+*
+* This file contains the execution unit test for Vector Class.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include<iostream>
 #include<typeinfo>
 

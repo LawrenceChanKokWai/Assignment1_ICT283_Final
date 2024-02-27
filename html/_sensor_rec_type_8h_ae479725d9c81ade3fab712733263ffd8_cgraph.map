@@ -1,0 +1,8 @@
+<map id="operator&gt;&gt;" name="operator&gt;&gt;">
+<area shape="rect" id="node1" title="Overloaded stream extraction operator for reading SensorRecType from an istream." alt="" coords="5,129,91,156"/>
+<area shape="rect" id="node2" href="$class_sensor_rec_type.html#a21bdf6964ebdf4edda603c0c70339d9f" title="Set the date component of the sensor record." alt="" coords="139,5,349,32"/>
+<area shape="rect" id="node3" href="$class_sensor_rec_type.html#a3d4d71e19febdb42520ad458a782c78b" title="Set the solar radiation component of the sensor record." alt="" coords="153,57,335,98"/>
+<area shape="rect" id="node4" href="$class_sensor_rec_type.html#ae0d0b0bed581cb259c4ba92ce44d0cb9" title="Set the temperature component of the sensor record." alt="" coords="153,122,335,163"/>
+<area shape="rect" id="node5" href="$class_sensor_rec_type.html#a1251567e0ca976e70674bfb3eb271366" title="Set the time component of the sensor record." alt="" coords="139,188,349,215"/>
+<area shape="rect" id="node6" href="$class_sensor_rec_type.html#a56b7dbcebdda106e3dcf3a99fa81dbaf" title="Set the wind speed component of the sensor record." alt="" coords="153,239,335,281"/>
+</map>

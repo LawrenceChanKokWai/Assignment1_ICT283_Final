@@ -1,3 +1,12 @@
+/**
+* @file Date.cpp
+* @brief Date class implementation file
+*
+* This file contains the Date class implementation.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "Date.h"
 
 Date::Date()

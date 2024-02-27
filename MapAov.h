@@ -1,3 +1,15 @@
+/**
+* @file MapAov.h
+* @brief MapAov class definition.
+*
+* This file contains the definition of the MapAov class.
+* The class allows retrieving data from istream on a map.
+* With the key holding to the year, value of the map holding on array of Vectors.
+* Where array hold the month.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #ifndef MAPAOV_H_INCLUDED
 #define MAPAOV_H_INCLUDED
 

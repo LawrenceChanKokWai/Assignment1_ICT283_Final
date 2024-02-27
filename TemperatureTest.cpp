@@ -1,3 +1,13 @@
+
+/**
+* @file TemperatureTest.cpp
+* @brief Temperature Test execution file
+*
+* This file contains the execution unit test for Temperature Class.
+*
+* @author Chan Kok Wai ( Student Number: 33924804 )
+* @version 1.0
+*/
 #include "Temperature.h"
 #include <iostream>
 #include <sstream>
